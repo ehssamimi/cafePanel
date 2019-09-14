@@ -83,14 +83,14 @@ class TopEditItem extends Component {
                                                 </FormGroup>
                                             </div>
                                             <div className="col-sm-4 rowInput">
-                                                <SuggestCategoriesComponent label='itemList' GetSuggestValue={GetSuggestValue}/>
+                                                <SuggestCategoriesComponent label='دسته بندی' GetSuggestValue={GetSuggestValue}/>
                                             </div>
                                         </div>
                                         <div className="w-100 d-flex ">
                                             <div className="col-sm-12 rowInput">
                                                 <FormGroup className="form-group has-float-label position-relative">
                                                     <Label>
-                                                        <IntlMessages id="Description" />
+                                                        <IntlMessages id="توضیحات" />
                                                     </Label>
                                                     <Field className="form-control" name="Description" component="textarea" rows="6" />
                                                     {errors.Description && touched.Description ? (

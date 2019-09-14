@@ -63,7 +63,7 @@ class ShowCategoriesAndItems extends Component {
                         </div>
                     </CardTitle>
                     <div className="d-flex flex-row">
-                        <div className="w-100">
+                        <div className="w-100  ">
                             {categories?categories.map((todo ,index)=><LiShowCategoriesAndItems  key={index} categories={todo}/>):""}
                         </div>
                     </div>

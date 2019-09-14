@@ -29,7 +29,7 @@ class TwoStepAddItem extends Component {
         return (
             <div>
                 {
-                    step1?<AddItem handelGoTwoStep2={this.handelGoTwoStep2.bind(this)} />:<AddGalleryItem id={id} itemName={itemName}/>
+                    step1?<AddItem handelGoTwoStep2={this.handelGoTwoStep2.bind(this)} />:<AddGalleryItem id={id} itemName={itemName} step2={true}/>
                 }
             </div>
         );

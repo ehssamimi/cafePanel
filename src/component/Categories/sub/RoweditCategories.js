@@ -112,8 +112,8 @@ class RoweditCategories extends Component {
             const {Description}=responsive.data;
             if(Description === "d"){
                 NotificationManager.success(
-                    "congratulation",
-                    "your categories added",
+                    "موفق شدید",
+                    "دسته بندی شما با موفقیت تغییر کرد",
                     3000,
                     null,
                     null,
@@ -124,7 +124,7 @@ class RoweditCategories extends Component {
                 })
             }else {
                 NotificationManager.error(
-                    " new game currency didnt add",
+                    " موفق نشدید!",
                     Description,
                     3000,
                     null,
@@ -170,7 +170,7 @@ class RoweditCategories extends Component {
                         <Card>
                             <CardBody>
                                 <CardTitle className='float-right'>
-                                    <IntlMessages id="اضافه کردن دسته بندی جدید" />
+                                    <IntlMessages id="ویرایش دسته بندی " />
                                 </CardTitle>
 
                                 <Formik

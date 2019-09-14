@@ -248,7 +248,7 @@ class RowShowCategories extends Component {
                                 toggle={this.toggleLarge}
                             >
                                 <ModalHeader toggle={this.toggleLarge}>
-                                    Modal title
+                                    ویرایش دسته بندی
                                 </ModalHeader>
                                 <ModalBody>
                                     <RoweditCategories Title={Title} Rank={RowId} id={this.props.input._id} GetBackToMain={this.GetBackToMain.bind(this)}/>

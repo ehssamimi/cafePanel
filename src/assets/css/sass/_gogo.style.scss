@@ -120,6 +120,15 @@ html {
 #root {
   height: 100%;
 }
+//@font-face {
+//  font-family: 'IRANSans';
+//  src: url('./../../../../public/assets/fonts/WebFonts/fonts/ttf/IRANSansWeb.ttf');
+//  src:
+//          local('IRANSans'),
+//          local('IRANSans'),
+//          url('./../../../../public/assets/fonts/WebFonts/fonts/ttf/IRANSansWeb.ttf')
+//          format('IRANSans');
+//}
 
 body {
   //font-family: "Nunito", sans-serif ;
@@ -142,6 +151,9 @@ body {
     }
   }
 }
+//.fontFamily{
+//  font-family: IRANSans !important;
+//}
 
 .fixed-background {
   background: url("/assets/img/balloon.jpg") no-repeat center center fixed;
@@ -3033,6 +3045,7 @@ main {
 
 .dashboard-link-list {
   height: 385px;
+  overflow: scroll;
 }
 
 .dashboard-progress {
@@ -6795,4 +6808,7 @@ input:-webkit-autofill {
   justify-content: center;
   align-items: center;
   align-content: stretch;
+}
+.overflow{
+  overflow: scroll;
 }

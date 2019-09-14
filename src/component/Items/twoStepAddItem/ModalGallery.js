@@ -41,10 +41,10 @@ class ModalGallery extends Component {
                         toggle={this.toggleLarge}
                     >
                         <ModalHeader toggle={this.toggleLarge}>
-                            Modal title
+                            اضافه کردن عکس به گالری
                         </ModalHeader>
                         <ModalBody>
-                            <AddGalleryItem id={this.props.id} itemName={this.props.id}/>
+                            <AddGalleryItem id={this.props.id} itemName={this.props.id} handelBack={this.props.handelBack}/>
                         </ModalBody>
                     </Modal>
             </div>

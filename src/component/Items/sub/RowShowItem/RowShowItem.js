@@ -112,8 +112,8 @@ class RowShowItem extends Component {
 
             if(Description === "d"){
                 NotificationManager.success(
-                    "congratulation",
-                    "your categories added",
+                    "موفق شدید!",
+                    "دسته بندی شما حذف شد",
                     3000,
                     null,
                     null,
@@ -129,7 +129,7 @@ class RowShowItem extends Component {
 
             }else {
                 NotificationManager.error(
-                    " new game currency didnt add",
+                    " موفق نشدید!",
                     Description,
                     3000,
                     null,

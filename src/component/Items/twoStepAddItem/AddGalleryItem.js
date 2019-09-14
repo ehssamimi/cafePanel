@@ -22,7 +22,7 @@ class AddGalleryItem extends Component {
         super(props);
         this.state={
             src: null, crop: '', imgIcon: null,
-            id:'',itemName:''
+            id:'',itemName:'',edit:false
         }
     }
     handelCrop = (src,crop,imgIcon) => {
@@ -69,19 +69,19 @@ class AddGalleryItem extends Component {
             const {Description,State}=responsive.data;
             if(State){
                 NotificationManager.success(
-                    "congratulation",
-                    "your categories added",
+                    "تبریک میگم",
+                    "عکس شما به محصول مورد نظر اضافه شد ",
                     3000,
                     null,
                     null,
                     "success"
                 );
                 this.setState({
-                    id
+                    id,edit:true
                 });
             }else {
                 NotificationManager.error(
-                    " new game currency didnt add",
+                    " موفق نشدید!",
                     Description,
                     3000,
                     null,
@@ -100,10 +100,22 @@ class AddGalleryItem extends Component {
             console.log(error)});
 
     }
+    handelEdit(){
+        let{edit}=this.state;
+        if(edit){
+            window.location.reload();
+        }else {
+            if (this.props.step2) {
+                window.location.reload();
+            } else {
+                this.props.handelBack()
+            }
+        }
+    }
 
 
     render() {
-        let{id,itemName}=this.state
+        let{id,itemName}=this.state;
         return (
 
 
@@ -121,7 +133,14 @@ class AddGalleryItem extends Component {
                                         <CropComponent label={'اضافه کردن  گالری'} onCropImg={this.handelCrop} aspect={2/3}/>
                                     </div>
                                 </div>
-                                <Button color="primary" type="submit" className="col-2 rowInput mt-2"
+                                {
+                                    this.props.step2?'': <Button  className="col-3  btn-warning mr-auto  br05 d-flex justify-content-center align-items-center float-left" onClick={this.handelEdit.bind(this)}>
+                                        برگشت
+                                    </Button>
+
+                                }
+
+                                <Button color="primary" type="submit" className="col-2 rowInput mt-2 float-right"
                                         onClick={this.handelSubmit.bind(this)}>
                                     ارسال
                                 </Button>
@@ -131,15 +150,15 @@ class AddGalleryItem extends Component {
                 </Colxx>
 
 
-                <Colxx xxs="12">
-                    <Card>
-                        <CardBody>
-                            <div>
-                                <ShowGalleryItem ID={id} Name={itemName}/>
-                            </div>
-                        </CardBody>
-                    </Card>
-                </Colxx>
+                {/*<Colxx xxs="12">*/}
+                    {/*<Card>*/}
+                        {/*<CardBody>*/}
+                            {/*<div>*/}
+                                {/*<ShowGalleryItem ID={id} Name={itemName}/>*/}
+                            {/*</div>*/}
+                        {/*</CardBody>*/}
+                    {/*</Card>*/}
+                {/*</Colxx>*/}
 
 
 

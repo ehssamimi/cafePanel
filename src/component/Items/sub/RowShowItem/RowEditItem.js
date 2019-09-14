@@ -40,7 +40,7 @@ class RowEditItem extends Component {
             src: null, crop:null, imgIcon: null,
             src2: null, crop2: null, imgIcon2: null,suggest:null,fileName:null,
             categories:[],option:[],files:[],categoriesList:{}, categoriesId:null,
-            categoriesName:null,itemId:null,isEdit:false,modalLarge:false
+            categoriesName:null,itemId:null,isEdit:false,modalLarge:false,galleryEdit:false
 
         }
     }
@@ -156,9 +156,17 @@ class RowEditItem extends Component {
             console.log(error)});
     };
     handelBack(){
-        let {isEdit}=this.state
+        let {isEdit}=this.state;
         this.props.GetBackToMain(isEdit)
     }
+    // handelSetEdit(value){
+    //     let {galleryEdit}=this.state;
+    //     this.setState({
+    //         galleryEdit:value
+    //     });
+    //     this.props.GetBackToMain(galleryEdit)
+    //
+    // }
     toggleLarge = () => {
         this.setState(prevState => ({
             modalLarge: !prevState.modalLarge
@@ -286,16 +294,22 @@ class RowEditItem extends Component {
                                     toggle={this.toggleLarge}
                                 >
                                     <ModalHeader toggle={this.toggleLarge}>
-                                        Modal title
+                                       اضافه کردن عکس به گالری
                                     </ModalHeader>
                                     <ModalBody>
-                                        <TopEditItem Title={this.props.Title} Price={this.props.price} Description={this.props.Description}  handelCrop={this.handelCrop.bind(this)} handelCrop2={this.handelCrop2.bind(this)} handelBack={this.handelBack.bind(this)} GetSuggestValue={this.GetSuggestValue.bind(this)} handleSubmit={this.handleSubmit.bind(this)}/>
+                                        <TopEditItem Title={this.props.Title} Price={this.props.price}
+                                                     Description={this.props.Description}
+                                                     handelCrop={this.handelCrop.bind(this)}
+                                                     handelCrop2={this.handelCrop2.bind(this)}
+                                                     handelBack={this.handelBack.bind(this)}
+                                                     GetSuggestValue={this.GetSuggestValue.bind(this)}
+                                                     handleSubmit={this.handleSubmit.bind(this)}/>
                                     </ModalBody>
                                 </Modal>
                             </div>
 
 
-                            <ModalGallery id={this.props.id} itemName={this.props.Title}/>
+                            <ModalGallery id={this.props.id} itemName={this.props.Title}  handelBack={this.handelBack.bind(this)}/>
 
                         </CardBody>
 
