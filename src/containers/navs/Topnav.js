@@ -27,6 +27,9 @@ import {
 import { MobileMenuIcon, MenuIcon } from "../../components/svg";
 import TopnavEasyAccess from "./Topnav.EasyAccess";
 import TopnavNotifications from "./Topnav.Notifications";
+import * as Const from "../../component/Const";
+import axios from "axios";
+import NotificationManager from "../../components/common/react-notifications/NotificationManager";
 
 class TopNav extends Component {
   constructor(props) {
@@ -34,9 +37,31 @@ class TopNav extends Component {
 
     this.state = {
       isInFullScreen: false,
-      searchKeyword: ""
+      searchKeyword: "",LName:'',FName:''
     };
   }
+    componentDidMount(){
+        let headers = {
+            'Token':`${Const.Token}`,
+            'Id': `${Const.ID}`
+        };
+        // console.log(headers)
+        axios.get(`${Const.Amin_URL}admin/info` , {headers:headers}).then(responsive=>
+        {
+            const {Description}=responsive.data;
+            // console.log(Description);
+            let DES=JSON.parse(Description);
+            // console.log(DES);
+
+            this.setState({
+                LName:DES.LastName,
+                FName:DES.FirstName,
+                UName:DES.UserName,
+            });
+
+        }).catch(error=>{console.log(error)});
+    }
+
 
   handleChangeLocale = locale => {
     this.props.changeLocale(locale);
@@ -162,6 +187,58 @@ class TopNav extends Component {
 
   handleLogout = () => {
     //logout
+      let headers = {
+          // 'ID':`${Const.Token}`,
+          // 'Token': `${Const.ID}`
+
+          'Token':`${Const.Token}`,
+          'ID': `${Const.ID}`
+      };
+      console.log(headers);
+      async function deleteItems(){
+          await localStorage.removeItem('user_id');
+          await localStorage.removeItem('user_Token');
+          return true
+      }
+      axios.post(`${Const.Amin_URL}admin/logout` , null,{headers:headers}).then(responsive=>
+      {
+          // this.setState({
+          //     loaderActive:false
+          // });
+          const {Description,State}=responsive.data;
+          if(Description === "d"){
+              let data=deleteItems();
+              console.log(data);
+              if (data){
+                  this.props.history.push("/login");
+              }
+              NotificationManager.success(
+                  "congratulation",
+                  "your exit",
+                  3000,
+                  null,
+                  null,
+                  "success"
+              );
+          }else {
+              NotificationManager.error(
+                  " new game currency didnt add",
+                  Description,
+                  3000,
+                  null,
+                  null,
+                  "success"
+              );
+          }
+
+          // let DES=JSON.parse(Description);
+          // this.props.inprogress(DES);x
+          console.log(Description)
+      }).catch(error=>{
+          // this.setState({
+          //     loaderActive:false
+          // });
+          console.log(error)});
   };
 
   menuButtonClick = (e, menuClickCount, containerClassnames) => {
@@ -184,7 +261,9 @@ class TopNav extends Component {
   };
 
   render() {
-    const { containerClassnames, menuClickCount, locale } = this.props;
+      const { LName ,FName} = this.state;
+
+      const { containerClassnames, menuClickCount, locale } = this.props;
     const { messages } = this.props.intl;
     return (
       <nav className="navbar fixed-top">
@@ -205,47 +284,47 @@ class TopNav extends Component {
           <MobileMenuIcon />
         </NavLink>
 
-        <div className="search" data-search-path="/app/pages/search">
-          <Input
-            name="searchKeyword"
-            id="searchKeyword"
-            placeholder={messages["menu.search"]}
-            value={this.state.searchKeyword}
-            onChange={e => this.handleSearchInputChange(e)}
-            onKeyPress={e => this.handleSearchInputKeyPress(e)}
-          />
-          <span
-            className="search-icon"
-            onClick={e => this.handleSearchIconClick(e)}
-          >
-            <i className="simple-icon-magnifier" />
-          </span>
-        </div>
+        {/*<div className="search" data-search-path="/app/pages/search">*/}
+          {/*<Input*/}
+            {/*name="searchKeyword"*/}
+            {/*id="searchKeyword"*/}
+            {/*placeholder={messages["menu.search"]}*/}
+            {/*value={this.state.searchKeyword}*/}
+            {/*onChange={e => this.handleSearchInputChange(e)}*/}
+            {/*onKeyPress={e => this.handleSearchInputKeyPress(e)}*/}
+          {/*/>*/}
+          {/*<span*/}
+            {/*className="search-icon"*/}
+            {/*onClick={e => this.handleSearchIconClick(e)}*/}
+          {/*>*/}
+            {/*<i className="simple-icon-magnifier" />*/}
+          {/*</span>*/}
+        {/*</div>*/}
 
-        <div className="d-inline-block">
-          <UncontrolledDropdown className="ml-2">
-            <DropdownToggle
-              caret
-              color="light"
-              size="sm"
-              className="language-button"
-            >
-              <span className="name">{locale.toUpperCase()}</span>
-            </DropdownToggle>
-            <DropdownMenu className="mt-3" right>
-              {localeOptions.map(l => {
-                return (
-                  <DropdownItem
-                    onClick={() => this.handleChangeLocale(l.id)}
-                    key={l.id}
-                  >
-                    {l.name}
-                  </DropdownItem>
-                );
-              })}
-            </DropdownMenu>
-          </UncontrolledDropdown>
-        </div>
+        {/*<div className="d-inline-block">*/}
+          {/*<UncontrolledDropdown className="ml-2">*/}
+            {/*<DropdownToggle*/}
+              {/*caret*/}
+              {/*color="light"*/}
+              {/*size="sm"*/}
+              {/*className="language-button"*/}
+            {/*>*/}
+              {/*<span className="name">{locale.toUpperCase()}</span>*/}
+            {/*</DropdownToggle>*/}
+            {/*<DropdownMenu className="mt-3" right>*/}
+              {/*{localeOptions.map(l => {*/}
+                {/*return (*/}
+                  {/*<DropdownItem*/}
+                    {/*onClick={() => this.handleChangeLocale(l.id)}*/}
+                    {/*key={l.id}*/}
+                  {/*>*/}
+                    {/*{l.name}*/}
+                  {/*</DropdownItem>*/}
+                {/*);*/}
+              {/*})}*/}
+            {/*</DropdownMenu>*/}
+          {/*</UncontrolledDropdown>*/}
+        {/*</div>*/}
 
         <a className="navbar-logo" href="/">
           <span className="logo d-none d-xs-block" />
@@ -254,17 +333,17 @@ class TopNav extends Component {
 
         <div className="ml-auto">
           <div className="header-icons d-inline-block align-middle">
-            <div className="position-relative d-none d-none d-lg-inline-block">
-              <a
-                className="btn btn-outline-primary btn-sm mb-2 mr-3"
-                target="_top"
-                href="https://themeforest.net/cart/configure_before_adding/22544383?license=regular&ref=ColoredStrategies&size=source"
-              >
-                <IntlMessages id="user.buy" />
-              </a>
-            </div>
+            {/*<div className="position-relative d-none d-none d-lg-inline-block">*/}
+              {/*<a*/}
+                {/*className="btn btn-outline-primary btn-sm mb-2 mr-3"*/}
+                {/*target="_top"*/}
+                {/*href="https://themeforest.net/cart/configure_before_adding/22544383?license=regular&ref=ColoredStrategies&size=source"*/}
+              {/*>*/}
+                {/*<IntlMessages id="user.buy" />*/}
+              {/*</a>*/}
+            {/*</div>*/}
             <TopnavEasyAccess />
-            <TopnavNotifications />
+            {/*<TopnavNotifications />*/}
             <button
               className="header-icon btn btn-empty d-none d-sm-inline-block"
               type="button"
@@ -281,17 +360,17 @@ class TopNav extends Component {
           <div className="user d-inline-block">
             <UncontrolledDropdown className="dropdown-menu-right">
               <DropdownToggle className="p-0" color="empty">
-                <span className="name mr-1">Sarah Kortney</span>
+                  <span className="name mr-1">{`${FName} ${LName}`}</span>
                 <span>
                   <img alt="Profile" src="/assets/img/profile-pic-l.jpg" />
                 </span>
               </DropdownToggle>
               <DropdownMenu className="mt-3" right>
-                <DropdownItem>Account</DropdownItem>
-                <DropdownItem>Features</DropdownItem>
-                <DropdownItem>History</DropdownItem>
-                <DropdownItem>Support</DropdownItem>
-                <DropdownItem divider />
+                {/*<DropdownItem>Account</DropdownItem>*/}
+                {/*<DropdownItem>Features</DropdownItem>*/}
+                {/*<DropdownItem>History</DropdownItem>*/}
+                {/*<DropdownItem>Support</DropdownItem>*/}
+                {/*<DropdownItem divider />*/}
                 <DropdownItem onClick={() => this.handleLogout()}>
                   Sign out
                 </DropdownItem>

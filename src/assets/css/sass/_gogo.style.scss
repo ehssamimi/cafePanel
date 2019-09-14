@@ -46,6 +46,7 @@ Table of Contents
 
 /* 00.Variables and Imports */
 @import url("https://fonts.googleapis.com/css?family=Nunito:300,400,400i,600,700");
+//@import url(../../../../public/assets/WebFonts/css/fontiran.css);
 
 $main-menu-item-height: 110px;
 $main-menu-width: 120px;
@@ -90,6 +91,7 @@ $warning-color: #b69329;
 $error-color: #c43d4b;
 
 /* 01.Base */
+
 html {
   width: 100%;
   height: 100%;
@@ -120,7 +122,8 @@ html {
 }
 
 body {
-  font-family: "Nunito", sans-serif;
+  //font-family: "Nunito", sans-serif ;
+  font-family: IRANSans !important;
   font-size: 0.8rem;
   font-weight: 400;
   color: $primary-color;
@@ -301,11 +304,12 @@ hr {
 
 .logo-single {
   width: 110px;
-  height: 35px;
+  height: 100px;
   background: url($logoPath) no-repeat;
   background-position: center center;
   display: inline-block;
   margin-bottom: 60px;
+  background-size: 120%;
 }
 
 .list-item-heading {
@@ -376,6 +380,9 @@ p {
 
 .text-large {
   font-size: 1.9rem !important;
+}
+.text-medium {
+  font-size: 1.4rem !important;
 }
 
 .text-one {
@@ -678,7 +685,7 @@ button {
   &:hover,
   &:focus {
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15),
-      0 4px 6px 2px rgba(0, 0, 0, 0.15) !important;
+    0 4px 6px 2px rgba(0, 0, 0, 0.15) !important;
   }
 }
 
@@ -782,16 +789,16 @@ button {
 
 .btn-primary.btn-primary-gradient {
   background: linear-gradient(
-    to right,
-    $theme-color-1,
-    darken($theme-color-1, 15%)
+                  to right,
+                  $theme-color-1,
+                  darken($theme-color-1, 15%)
   );
 
   &:hover {
     background: linear-gradient(
-      to right,
-      $theme-color-1,
-      darken($theme-color-1, 8%)
+                    to right,
+                    $theme-color-1,
+                    darken($theme-color-1, 8%)
     );
   }
 }
@@ -800,24 +807,24 @@ button {
 .btn-primary-gradient:not(:disabled):not(.disabled).active,
 .show > .btn-primary-gradient.dropdown-toggle {
   background: linear-gradient(
-    to right,
-    $theme-color-1,
-    darken($theme-color-1, 15%)
+                  to right,
+                  $theme-color-1,
+                  darken($theme-color-1, 15%)
   );
 }
 
 .btn-secondary-gradient {
   background: linear-gradient(
-    to right,
-    $theme-color-2,
-    darken($theme-color-2, 15%)
+                  to right,
+                  $theme-color-2,
+                  darken($theme-color-2, 15%)
   );
 
   &:hover {
     background: linear-gradient(
-      to right,
-      $theme-color-2,
-      darken($theme-color-2, 8%)
+                    to right,
+                    $theme-color-2,
+                    darken($theme-color-2, 8%)
     );
   }
 }
@@ -826,9 +833,9 @@ button {
 .btn-secondary-gradient:not(:disabled):not(.disabled).active,
 .show > .btn-secondary-gradient.dropdown-toggle {
   background: linear-gradient(
-    to right,
-    $theme-color-2,
-    darken($theme-color-2, 15%)
+                  to right,
+                  $theme-color-2,
+                  darken($theme-color-2, 15%)
   );
 }
 
@@ -1272,8 +1279,25 @@ button {
 .min-width-zero {
   min-width: 0;
 }
+.br05 {
+  border-radius: 0.5vw;
+}
+.files-gallery-item{
+  height: 10em;
+  width: 10em;
+  border-radius: 0.5vw;
+  margin:1em;
+}
+.fontSize17em {
+  font-size: 1.7em;
+}
+.fontSize15em {
+  font-size: 1.5em;
+}
+.imgHeight20em{
+  height: 20em;
+}
 
-.mb-5,
 .my-5 {
   margin-bottom: 2rem !important;
 }
@@ -1321,7 +1345,59 @@ button {
 .border-secondary {
   border-color: $primary-color !important;
 }
+.hoverImg{
+  background: #fefefe;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.trashIcon {
+  //padding: 0;
+  //font-size: 5em;
+  //width: 100px;
+  //height:  100px;
+  //line-height:  100px;
+  position: absolute;
+  top: 10px;
+  left: 185px;
 
+  padding: 0;
+  font-size: 2.5em;
+  width: 50px;
+  height:  50px;
+  line-height:  50px;
+}
+.trashIconBox {
+  //padding: 0;
+  //font-size: 5em;
+  //width: 100px;
+  //height:  100px;
+  //line-height:  100px;
+  position: absolute;
+  top: 10px;
+  left: 10%;
+
+  padding: 0;
+  font-size: 2.5em;
+  width: 50px;
+  height:  50px;
+  line-height:  50px;
+}
+.trashIconBox2 {
+  //padding: 0;
+  //font-size: 5em;
+  //width: 100px;
+  //height:  100px;
+  //line-height:  100px;
+  position: absolute;
+  top: 10px;
+  right: 10%;
+
+  padding: 0;
+  font-size: 2.5em;
+  width: 50px;
+  height:  50px;
+  line-height:  50px;
+}
 /* 05.Badges */
 
 .bg-theme-2,
@@ -1381,6 +1457,48 @@ button {
   color: $button-text-color;
 }
 
+.deleteBadge {
+  padding: 0.55em 0.75em 0.6em 0.75em;
+  font-size: 1em;
+  position: absolute;
+  top: 85%;
+  left: -7px;
+  cursor: pointer;
+  border-radius:  0.5em 0  0 0.5em ;
+
+}
+.deleteBadge2 {
+  padding: 0.55em 0.75em 0.6em 0.75em;
+  font-size: 1em;
+  position: absolute;
+  top: 90%;
+  left: -7px;
+  cursor: pointer;
+}
+.editBadge2 {
+  padding: 0.55em 0.75em 0.6em 0.75em;
+  font-size: 1em;
+  position: absolute;
+  top: 90%;
+  right: -7px;
+  cursor: pointer;
+  border-radius: 0 0.5em 0.5em 0 ;
+}
+.editBadgeCategories {
+  padding: 0.55em 0.75em 0.6em 0.75em;
+  font-size: 1em;
+  position: absolute;
+  top:85%;
+  right: -7px;
+  cursor: pointer;
+  border-radius: 0 0.5em 0.5em 0 ;
+}
+
+.height30{
+  height: 30em;
+}
+
+
 .badge {
   padding: 0.55em 0.75em 0.6em 0.75em;
   font-size: 74%;
@@ -1401,6 +1519,10 @@ button {
   }
   &.badge-top-left-3 {
     top: 70px;
+    left: -7px;
+  }
+  &.badge-top-left-4 {
+    top: 85%;
     left: -7px;
   }
 
@@ -1633,7 +1755,8 @@ button {
 
 /* 09.Navbar*/
 .navbar {
-  background: $foreground-color;
+  //background: $foreground-color;
+  background: #F3CD71;
   height: $navbar-height;
   padding: 1.5rem $main-margin 1.5rem 0;
   @include depth(1);
@@ -1719,7 +1842,7 @@ button {
 
   .navbar-logo {
     width: 110px;
-    height: 35px;
+    height: 100px;
     position: absolute;
     left: 0;
     right: 0;
@@ -1730,6 +1853,7 @@ button {
       height: 100%;
       background: url($logoPath) no-repeat;
       background-position: center center;
+      background-size: 90%;
     }
 
     .logo-mobile {
@@ -2883,10 +3007,10 @@ main {
 
 .dashboard-sq-banner {
   background-image: linear-gradient(
-    to right top,
-    $gradient-color-2,
-    $gradient-color-3,
-    $gradient-color-1
+                  to right top,
+                  $gradient-color-2,
+                  $gradient-color-3,
+                  $gradient-color-1
   );
   background-size: cover;
   height: 385px;
@@ -3816,8 +3940,8 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .custom-checkbox
-  .custom-control-input:indeterminate
-  ~ .custom-control-label::before {
+.custom-control-input:indeterminate
+~ .custom-control-label::before {
   background-color: $theme-color-1;
 }
 
@@ -3948,12 +4072,12 @@ select.form-control:not([size]):not([multiple]) {
 
 .react-select .react-select__dropdown-indicator,
 .react-select
-  .react-select__control--is-focused
-  .react-select__dropdown-indicator,
+.react-select__control--is-focused
+.react-select__dropdown-indicator,
 .react-select .react-select__clear-indicator,
 .react-select
-  .react-select__control--is-focused
-  .react-select__clear-indicator {
+.react-select__control--is-focused
+.react-select__clear-indicator {
   outline: initial;
   box-shadow: initial;
 
@@ -4107,7 +4231,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .react-datepicker-popper[data-placement^="bottom"]
-  .react-datepicker__triangle::before {
+.react-datepicker__triangle::before {
   border-bottom-color: $separator-color !important;
 }
 
@@ -4150,7 +4274,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .react-datepicker-popper[data-placement^="top"]
-  .react-datepicker__triangle::before,
+.react-datepicker__triangle::before,
 .react-datepicker__year-read-view--down-arrow::before,
 .react-datepicker__month-read-view--down-arrow::before,
 .react-datepicker__month-year-read-view--down-arrow::before {
@@ -4158,10 +4282,10 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .react-datepicker__time-container
-  .react-datepicker__time
-  .react-datepicker__time-box
-  ul.react-datepicker__time-list
-  li.react-datepicker__time-list-item:hover {
+.react-datepicker__time
+.react-datepicker__time-box
+ul.react-datepicker__time-list
+li.react-datepicker__time-list-item:hover {
   background: $background-color !important;
 }
 
@@ -4195,24 +4319,24 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .react-datepicker__time-container
-  .react-datepicker__time
-  .react-datepicker__time-box {
+.react-datepicker__time
+.react-datepicker__time-box {
   width: 87px !important;
 }
 
 .react-datepicker__time-container
-  .react-datepicker__time
-  .react-datepicker__time-box
-  ul.react-datepicker__time-list {
+.react-datepicker__time
+.react-datepicker__time-box
+ul.react-datepicker__time-list {
   padding-left: 0 !important;
   padding-right: 30px !important;
 }
 
 .react-datepicker__time-container
-  .react-datepicker__time
-  .react-datepicker__time-box
-  ul.react-datepicker__time-list
-  li.react-datepicker__time-list-item--selected {
+.react-datepicker__time
+.react-datepicker__time-box
+ul.react-datepicker__time-list
+li.react-datepicker__time-list-item--selected {
   background: $theme-color-1 !important;
 }
 
@@ -4537,54 +4661,54 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .custom-switch.custom-switch-primary
-  .custom-switch-input:checked
-  + .custom-switch-btn {
+.custom-switch-input:checked
++ .custom-switch-btn {
   background: $theme-color-1 !important;
   border: 1px solid $theme-color-1 !important;
 }
 
 .custom-switch.custom-switch-secondary
-  .custom-switch-input:checked
-  + .custom-switch-btn {
+.custom-switch-input:checked
++ .custom-switch-btn {
   background: $theme-color-2 !important;
   border: 1px solid $theme-color-2 !important;
 }
 
 .custom-switch.custom-switch-primary-inverse
-  .custom-switch-input
-  + .custom-switch-btn {
+.custom-switch-input
++ .custom-switch-btn {
   border: 1px solid $separator-color !important;
 }
 
 .custom-switch.custom-switch-primary-inverse
-  .custom-switch-input:checked
-  + .custom-switch-btn {
+.custom-switch-input:checked
++ .custom-switch-btn {
   background: $input-background !important;
   border: 1px solid $theme-color-1 !important;
 }
 
 .custom-switch.custom-switch-primary-inverse
-  .custom-switch-input:checked
-  + .custom-switch-btn:after {
+.custom-switch-input:checked
++ .custom-switch-btn:after {
   background: $theme-color-1 !important;
 }
 
 .custom-switch.custom-switch-secondary-inverse
-  .custom-switch-input
-  + .custom-switch-btn {
+.custom-switch-input
++ .custom-switch-btn {
   border: 1px solid $separator-color !important;
 }
 
 .custom-switch.custom-switch-secondary-inverse
-  .custom-switch-input:checked
-  + .custom-switch-btn {
+.custom-switch-input:checked
++ .custom-switch-btn {
   background: $input-background !important;
   border: 1px solid $theme-color-2 !important;
 }
 
 .custom-switch.custom-switch-secondary-inverse
-  .custom-switch-input:checked
-  + .custom-switch-btn:after {
+.custom-switch-input:checked
++ .custom-switch-btn:after {
   background: $theme-color-2 !important;
 }
 
@@ -5360,10 +5484,10 @@ input:-webkit-autofill {
 .progress-banner {
   height: 200px;
   background-image: linear-gradient(
-    to right top,
-    $gradient-color-2,
-    $gradient-color-3,
-    $gradient-color-1
+                  to right top,
+                  $gradient-color-2,
+                  $gradient-color-3,
+                  $gradient-color-1
   );
   transition: 0.5s;
   background-size: 200% auto;
@@ -6023,10 +6147,12 @@ input:-webkit-autofill {
   font-size: 90%;
   opacity: 1;
   top: -0.4em;
-  left: 0.75rem;
+  //left: 0.75rem;
+  right:2.2em ;
+  //left: 2.2em;
   z-index: 3;
   line-height: 1;
-  padding: 0 1px;
+  padding: 0 3px;
 }
 
 .has-float-label label::after,
@@ -6058,7 +6184,7 @@ input:-webkit-autofill {
 }
 
 .has-float-label
-  .form-control:placeholder-shown:not(:focus)::-webkit-input-placeholder {
+.form-control:placeholder-shown:not(:focus)::-webkit-input-placeholder {
   opacity: 0;
 }
 
@@ -6067,7 +6193,7 @@ input:-webkit-autofill {
 }
 
 .has-float-label
-  .form-control:placeholder-shown:not(:focus):-ms-input-placeholder {
+.form-control:placeholder-shown:not(:focus):-ms-input-placeholder {
   opacity: 0;
 }
 
@@ -6180,7 +6306,7 @@ input:-webkit-autofill {
 }
 
 .has-top-label
-  .form-control:placeholder-shown:not(:focus)::-webkit-input-placeholder {
+.form-control:placeholder-shown:not(:focus)::-webkit-input-placeholder {
   opacity: 0;
 }
 
@@ -6189,7 +6315,7 @@ input:-webkit-autofill {
 }
 
 .has-top-label
-  .form-control:placeholder-shown:not(:focus):-ms-input-placeholder {
+.form-control:placeholder-shown:not(:focus):-ms-input-placeholder {
   opacity: 0;
 }
 
@@ -6553,4 +6679,120 @@ input:-webkit-autofill {
       height: 1370px !important;
     }
   }
+}
+
+
+.imagheight15vh{
+  min-height: 15vh;
+}
+.imagheight20vh{
+  height: 20vh !important;
+}
+.imagheight40vh{
+  height: 40vh;
+}
+.fontFamimily13vw{
+  font-size: 1.3em;
+}
+.fontFamimily11em{
+  font-size: 1.1em !important;
+}
+.fontFamimily9em{
+  font-size: 0.9em;
+}
+.fontSizeInputText{
+  font-size: 19px;
+}
+
+.z-4 {
+  z-index: 4;
+}
+
+.z-5 {
+  z-index: 5;
+}
+
+.z-6 {
+  z-index: 6;
+}
+
+.z-20 {
+  z-index: 20;
+}
+
+.z-99 {
+  z-index: 99!important;
+}
+.calenderPersiona{
+  z-index: 99!important;
+  background: transparent !important;
+}
+.fontFamili12{
+  font-size: 0.7em;
+}
+.paddingZero{
+  padding: 0!important;
+}
+.marginZeroRL{
+  margin-right: 0!important;
+  margin-left: 0!important;
+}
+.dot-select {
+  height: 15px;
+  width: 15px;
+  background-color: $theme-color-1;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dot-unselect {
+  height: 15px;
+  width: 15px;
+  background-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+}
+.brw1{
+  border: 0.1em solid #666666;
+}
+.rotateShoWIcon{
+  position: absolute;
+  top: 10px;
+  left: 2px;
+
+  padding: 0;
+  //font-size: 2.5em;
+  //width: 50px;
+  //height:  50px;
+  line-height:  50px;
+}
+
+.catTitle{
+  direction: rtl;
+}
+.catsub{
+  direction: rtl;
+
+}
+.imgCropHidden{
+  //position: absolute;
+  //left: 0;
+  //right: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto
+}
+.imgHeight20vh{
+  height: 20vh;
+}
+.imgHeight30vh{
+  height: 30vh;
+}
+
+.loader{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
 }
