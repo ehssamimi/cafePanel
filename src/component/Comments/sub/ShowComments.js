@@ -71,6 +71,8 @@ class ShowComments extends Component {
     render() {
         let {modes,Description}=this.state;
         let {Name}=this.props;
+        console.log('Description');
+        console.log(Description);
         return (
         <div className="w-100">
             <Row>
