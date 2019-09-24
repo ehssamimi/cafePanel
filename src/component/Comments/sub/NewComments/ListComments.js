@@ -64,66 +64,6 @@ class ListComments extends Component {
             <div>
                 <Fragment>
                     {Description?Description.map((todo ,index)=><CommentsRow key={index} accordion={accordion[index]} toggleAccordion={this.toggleAccordion.bind(this)} index={index}  input={todo} Name={this.props.Name || todo['Title']}/>):""}
-
-
-
-                    {/*<div className="border">*/}
-                        {/*<Button*/}
-                            {/*block*/}
-                            {/*color="link"*/}
-                            {/*className="text-left"*/}
-                            {/*onClick={() => this.toggleAccordion(1)}*/}
-                            {/*aria-expanded={this.state.accordion[1]}*/}
-                        {/*>*/}
-                            {/*Collapsible Group Item #2*/}
-                        {/*</Button>*/}
-                        {/*<Collapse isOpen={this.state.accordion[1]}>*/}
-                            {/*<div className="p-4">*/}
-                                {/*2. Anim pariatur cliche reprehenderit, enim eiusmod high*/}
-                                {/*life accusamus terry richardson ad squid. 3 wolf moon*/}
-                                {/*officia aute, non cupidatat skateboard dolor brunch.*/}
-                                {/*Food truck quinoa nesciunt laborum eiusmod. Brunch 3*/}
-                                {/*wolf moon tempor, sunt aliqua put a bird on it squid*/}
-                                {/*single-origin coffee nulla assumenda shoreditch et.*/}
-                                {/*Nihil anim keffiyeh helvetica, craft beer labore wes*/}
-                                {/*anderson cred nesciunt sapiente ea proident. Ad vegan*/}
-                                {/*excepteur butcher vice lomo. Leggings occaecat craft*/}
-                                {/*beer farm-to-table, raw denim aesthetic synth nesciunt*/}
-                                {/*you probably haven't heard of them accusamus labore*/}
-                                {/*sustainable VHS.*/}
-                            {/*</div>*/}
-                        {/*</Collapse>*/}
-                    {/*</div>*/}
-
-
-                    {/*<div className="border">*/}
-                        {/*<Button*/}
-                            {/*block*/}
-                            {/*color="link"*/}
-                            {/*className="text-left"*/}
-                            {/*onClick={() => this.toggleAccordion(2)}*/}
-                            {/*aria-expanded={this.state.accordion[2]}*/}
-                        {/*>*/}
-                            {/*Collapsible Group Item #3*/}
-                        {/*</Button>*/}
-                        {/*<Collapse isOpen={this.state.accordion[2]}>*/}
-                            {/*<div className="p-4">*/}
-                                {/*3. Anim pariatur cliche reprehenderit, enim eiusmod high*/}
-                                {/*life accusamus terry richardson ad squid. 3 wolf moon*/}
-                                {/*officia aute, non cupidatat skateboard dolor brunch.*/}
-                                {/*Food truck quinoa nesciunt laborum eiusmod. Brunch 3*/}
-                                {/*wolf moon tempor, sunt aliqua put a bird on it squid*/}
-                                {/*single-origin coffee nulla assumenda shoreditch et.*/}
-                                {/*Nihil anim keffiyeh helvetica, craft beer labore wes*/}
-                                {/*anderson cred nesciunt sapiente ea proident. Ad vegan*/}
-                                {/*excepteur butcher vice lomo. Leggings occaecat craft*/}
-                                {/*beer farm-to-table, raw denim aesthetic synth nesciunt*/}
-                                {/*you probably haven't heard of them accusamus labore*/}
-                                {/*sustainable VHS.*/}
-                            {/*</div>*/}
-                        {/*</Collapse>*/}
-                    {/*</div>*/}
-
                 </Fragment>
             </div>
         );

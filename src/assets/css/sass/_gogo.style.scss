@@ -95,7 +95,7 @@ $error-color: #c43d4b;
 html {
   width: 100%;
   height: 100%;
-  background: $background-color;
+  background:  white!important;
 }
 
 :root {
@@ -136,7 +136,7 @@ body {
   font-size: 0.8rem;
   font-weight: 400;
   color: $primary-color;
-  background: $background-color;
+  background: white!important;
 
   &.background {
     height: 100%;
@@ -6656,7 +6656,8 @@ input:-webkit-autofill {
 
 @media print {
   body {
-    background: $foreground-color;
+    //background: $foreground-color;
+    background: white!important;
     height: 100%;
   }
 
