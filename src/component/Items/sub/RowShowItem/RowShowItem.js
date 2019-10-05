@@ -234,30 +234,30 @@ class RowShowItem extends Component {
 
                                 <CardBody>
                                     <div className="col-12 d-flex ">
-                                        <div className="col-6  fontFamimily9em">
+                                        <div className="col-6   paddingZero">
                                             <RowShowShow label={"عنوان"} value={input.Title} />
                                         </div>
-                                        <div className="col-6 fontFamimily9em ">
+                                        <div className="col-6  paddingZero ">
                                             <RowShowShow label={"دسته بندی"} value={input.RowId} />
                                         </div>
                                     </div>
-                                    <div className="col-12 d-flex mt-2 fontFamimily9em">
-                                        <div className="col-6">
+                                    <div className="col-12 d-flex mt-2  paddingZero">
+                                        <div className="col-6 paddingZero">
                                             <RowShowShow label={"نظرات"} value={input.Comments?input.Comments.length:0} />
                                         </div>
 
-                                        <div className="col-6 fontFamimily9em">
+                                        <div className="col-6  paddingZero">
                                             <RowShowShow label={"پسندیدن"} value={input.LikesCount} />
                                         </div>
                                     </div>
-                                    <div className="col-12 d-flex mt-2">
-                                        <div className="col-12 fontFamimily9em">
+                                    <div className="col-12 d-flex mt-2 paddingZero">
+                                        <div className="col-12  paddingZero">
                                             <RowShowShow label={"قیمت"} value={formatNumber(input.Price)} />
                                         </div>
 
                                     </div>
                                     <div className="col-12 d-flex mt-2">
-                                        <div className="col-12 fontFamimily9em">
+                                        <div className="col-12  paddingZero">
                                             <ShowDescriptionItems label={"توضیحات"} value={input.Description}/>
                                             {/*<RowShowShow label={"توضیحات"} value={input.Description} />*/}
                                         </div>
@@ -265,10 +265,10 @@ class RowShowItem extends Component {
                                     </div>
                                     <CarouselEdite  data={input.Gallery}/>
 
-                                    <span className=' badge-danger deleteBadge2' onClick={this.toggle}>
+                                    <span className=' badge-danger deleteBadge2 btn-shadow' onClick={this.toggle}>
                                          پاک کردن
                                     </span>
-                                    <span className=' badge-warning editBadge2' onClick={this.handelEdit.bind(this)}>
+                                    <span className=' badge-warning editBadge2 btn-shadow' onClick={this.handelEdit.bind(this)}>
                                          ویرایش
                                     </span>
                                 </CardBody>

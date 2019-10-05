@@ -82,6 +82,7 @@ class SuggestCategoriesComponent extends Component {
                         placeholder = {"type item name"}
                         data={option}
                         onChange={value => {this.handelSuggestValue(value)}}
+
                         // onChange={value => {this.setState({value})}}
                     />
                 </FormGroup>

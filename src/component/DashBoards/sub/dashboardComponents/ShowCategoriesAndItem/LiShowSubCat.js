@@ -7,7 +7,7 @@ class LiShowSubCat extends Component {
         let{todo}=this.props;
         console.log(todo);
         return (
-                <p className='catsub d-flex  mr-5 fontFamimily11em text-bold' >{todo}</p>
+                <p className='catsub d-flex  mr-5 fontFamimily11em  fontFamily' >{todo}</p>
         );
     }
 }

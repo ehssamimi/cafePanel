@@ -40,11 +40,11 @@ import SuggestCategoriesComponent from "../../SuggestCategoriesComponent";
 
 const SignupSchema = Yup.object().shape({
     Title: Yup.string()
-        .required("Title  is required!"),
+        .required("عنوان اجباری است"),
     Description: Yup.string()
-        .required("Description  is required!"),
+        .required("توضیحات احباری است"),
     Price: Yup.number()
-        .required("Price number is required!"),
+        .required("قیمت اجباری است "),
 
 });
 
@@ -210,6 +210,10 @@ class AddItem extends Component {
                                                 </FormGroup>
                                             </div>
                                             <div className="col-sm-4 rowInput">
+                                                <SuggestCategoriesComponent label='دسته بندی' GetSuggestValue={this.GetSuggestValue.bind(this)}/>
+
+                                            </div>
+                                            <div className="col-sm-4 rowInput">
                                                 <FormGroup className="form-group has-float-label position-relative">
                                                     <Label>
                                                         <IntlMessages id="قیمت" />
@@ -222,10 +226,7 @@ class AddItem extends Component {
                                                     ) : null}
                                                 </FormGroup>
                                             </div>
-                                            <div className="col-sm-4 rowInput">
-                                                <SuggestCategoriesComponent label='دسته بندی' GetSuggestValue={this.GetSuggestValue.bind(this)}/>
 
-                                            </div>
                                         </div>
                                         <div className="w-100 d-flex ">
                                             <div className="col-sm-12 rowInput">

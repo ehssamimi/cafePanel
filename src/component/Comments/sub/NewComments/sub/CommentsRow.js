@@ -186,7 +186,7 @@ class CommentsRow extends Component {
                     {/*onBlur={() => seen}*/}
                     {/*/>*/}
 
-                    <span className='d-flex align-content-center  ' onClick={this.checkedFunc.bind(this)}>
+                    <span className='d-flex align-content-center ' onClick={this.checkedFunc.bind(this)}>
                         {
 
                             seen?<span className='dot-unselect mr-3'></span>:<span className='dot-select mr-2'></span>

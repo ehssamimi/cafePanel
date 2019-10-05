@@ -151,9 +151,9 @@ body {
     }
   }
 }
-//.fontFamily{
-//  font-family: IRANSans !important;
-//}
+.fontFamily{
+  font-family: IRANSans !important;
+}
 
 .fixed-background {
   background: url("/assets/img/balloon.jpg") no-repeat center center fixed;
@@ -6708,6 +6708,12 @@ input:-webkit-autofill {
 .fontFamimily13vw{
   font-size: 1.3em;
 }
+.categoriesTitleList{
+  font-size: 1.3em;
+  font-weight: bolder;
+
+
+}
 .fontFamimily11em{
   font-size: 1.1em !important;
 }
@@ -6785,7 +6791,8 @@ input:-webkit-autofill {
 }
 .catsub{
   direction: rtl;
-
+  font-weight: lighter;
+  color: darkgray;
 }
 .imgCropHidden{
   //position: absolute;
@@ -6812,4 +6819,48 @@ input:-webkit-autofill {
 }
 .overflow{
   overflow: scroll;
+}
+.mt10{
+  margin-top: 10%;
+}
+.br10{
+  border-radius: 10% !important;
+}
+.wordBreakAll{
+  word-break: break-all;
+}
+.marginZero{
+  margin: 0!important;
+}
+.overflowAuto{
+  overflow: auto;
+}
+.fontSize1vw{
+  //font-size: calc(1em + 0.4vw);
+  font-size: 1vw !important;
+}
+.maxWidth{
+  max-width: 60%;
+}
+
+.fontSizeAuto{
+  font-size: 1.1vw !important;
+  @include respond-below(lg) {
+    font-size: 1vw !important;
+    //color:red!important;
+  }
+
+  @include respond-below(md) {
+    font-size: 0.9vw !important;
+    //color:red!important;
+
+  }
+
+  @include respond-below(sm) {
+    font-size: 2vw !important;
+  }
+
+  @include respond-below(xs) {
+    font-size: 3vw !important;
+  }
 }

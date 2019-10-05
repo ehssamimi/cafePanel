@@ -6,11 +6,11 @@ class RowShowShow extends Component {
         let{label,value}=this.props;
 
         return (
-            <div className="w-100 d-flex justify-content-start ">
-                <p className="  m-2 fontSize17em warning-color-text ">
+            <div className="w-100 d-flex justify-content-start mt-2 mb-2 ml-1 ">
+                <p className="     fontFamily maxWidth paddingZero  d-flex justify-content-start fontSizeAuto">
                     <IntlMessages id={`${label} :`}/>
                 </p>
-                <p className=" m-2 fontSize17em font-weight-bold  ">
+                <p className="   font-weight-bold  fontFamily  d-flex justify-content-end fontSizeAuto wordBreakAll">
                     {value}
                 </p>
             </div>

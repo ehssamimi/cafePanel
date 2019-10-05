@@ -33,7 +33,7 @@ class CropComponent extends Component {
                 unit: "%",
                 width: 30,
                 aspect:this.props.aspect || 16 / 9
-            },imgIcon:null,imgBlob:'',imgCropFile:''
+            },imgIcon:'انتخاب عکس',imgBlob:'',imgCropFile:''
         }
     }
 
@@ -44,8 +44,6 @@ class CropComponent extends Component {
             reader.addEventListener("load", () =>
                 this.setState({ src: reader.result,imgIcon:file[0].name })
             );
-
-
 
             reader.readAsDataURL(e.target.files[0]);
         }

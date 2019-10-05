@@ -83,19 +83,15 @@ class Login extends Component {
 
     render() {
         return (
-            <Row className="h-100">
+            <Row className="h-100 mt10">
                 <Colxx xxs="12" md="10" className="mx-auto my-auto">
+                {/*<Colxx xxs="12" md="10" className="d-flex align-items-center">*/}
                     <Card className="auth-card">
                         <div className="position-relative image-side ">
                             <p className="text-white h2">کافه آرت </p>
                             <p className="white mb-0" dir='rtl'>
-                                لطفا با نام خود وارد شوید!
+                             وارد شوید
                                 <br />
-                                {/*If you are not a member, please{" "}*/}
-                                {/*<NavLink to={`/register`} className="white">*/}
-                                {/*register*/}
-                                {/*</NavLink>*/}
-
                             </p>
                         </div>
                         <div className="form-side">
@@ -109,16 +105,16 @@ class Login extends Component {
                             <Form>
                                 <Label className="form-group has-float-label mb-4">
                                     <Input type="text" name='email' value={this.state.email} onChange={this.handelChange.bind(this)}/>
-                                    <IntlMessages id="user Name" />
+                                    <IntlMessages id="نام کاربری" />
                                 </Label>
                                 <Label className="form-group has-float-label mb-4">
                                     <Input type="password"  name='password' onChange={this.handelChange.bind(this)} value={this.state.password}/>
                                     <IntlMessages
-                                        id="user.password"
+                                        id="رمز عبور"
                                         // defaultValue={this.state.password}
                                     />
                                 </Label>
-                                <div className="d-flex justify-content-between align-items-center">
+                                <div className="d-flex justify-content-center align-items-center">
                                     {/*<NavLink to={`/forgot-password`}>*/}
                                     {/*<IntlMessages id="user.forgot-password-question" />*/}
                                     {/*</NavLink>*/}

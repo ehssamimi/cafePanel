@@ -226,7 +226,7 @@ class Categories extends Component {
                                                 <div className="col-sm-6 rowInput">
                                                     <FormGroup className="form-group has-float-label position-relative">
                                                         <Label>
-                                                            <IntlMessages id="رتبه" />
+                                                            <IntlMessages id="الویت در نمایش" />
                                                         </Label>
                                                         <Field className="form-control" name="Rank" type="number"  />
                                                         {errors.Rank && touched.Rank ? (

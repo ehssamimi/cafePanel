@@ -90,7 +90,7 @@ export default class AutoSuggestEdit extends React.Component {
                         this.state.suggestions.length ? "show" : ""
                         }`,
                     suggestionFocused: "active",
-                    suggestion: "react-autosuggest__suggestion"
+                    suggestion: "react-autosuggest__suggestion text-right"
                 }}
             />
         );

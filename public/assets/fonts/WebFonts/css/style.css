@@ -58,6 +58,9 @@ h1 {
 .text-bold {
 	font-weight: bold;
 }
+.text-bolder {
+	font-weight: bolder;
+}
 .text-black {
 	font-weight: 900;
 }

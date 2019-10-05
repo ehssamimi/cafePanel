@@ -30,10 +30,10 @@ class ShowRowTopRateItem extends Component {
         });
     }
     render() {
-        let {  Title, AverageRate, Total ,index}=this.props
+        let {  Title, AverageRate, Total ,index}=this.props;
         let{image}=this.state;
         return (
-            <div className="pr-2 pl-2">
+            <div className="pr-2 pl-2" >
                 <img src={image} alt={Title} className="mb-4 bg-light" />
                 <h6 className="mb-1">
                     <span className="mr-2">{index+1}.</span>

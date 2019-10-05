@@ -9,7 +9,7 @@ class LiShowCategoriesAndItems extends Component {
             <div className='d-flex  flex-column'>
                 <div dir='rtl' >
                     <div>
-                        <p className='float-right fontFamimily13vw text-bold'>- {categories.title}</p>
+                        <p className='float-right categoriesTitleList fontFamily '>- {categories.title}</p>
                     </div>
                     <div className='clearfix'> </div>
                     <div>

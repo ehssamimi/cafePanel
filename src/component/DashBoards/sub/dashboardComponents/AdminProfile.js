@@ -134,17 +134,18 @@ export default class AdminProfile extends Component {
         let {FName,LName,UName,edit}=this.state;
 
         return (
-            <Card className="dashboard-search">
+            <Card className="dashboard-search fontFamily">
                 {
                     edit?
                         <CardBody>
                             <CardTitle className="text-white">
                                 <IntlMessages id="مشاهده اطلاعات" />
                             </CardTitle>
-                            <Form className="form-container" onSubmit={this.handlSubmit.bind(this)}>
-                                <Label className="form-group has-float-label mb-4">
+                            <Form className="form-container fontFamily" onSubmit={this.handlSubmit.bind(this)}>
+                                <Label className="form-group has-float-label mb-4 fontFamily">
                                     <Input type="text" name='FName' value={FName} onChange={this.handelChange.bind(this)}/>
-                                    <IntlMessages id="نام" />
+                                    {/*<span className='fontFamily'>"نام"</span>*/}
+                                    <IntlMessages id='تام' />
                                 </Label>
                                 <Label className="form-group has-float-label mb-4">
                                     <Input type="text"  name='LName' onChange={this.handelChange.bind(this)} value={LName}/>
@@ -189,8 +190,8 @@ export default class AdminProfile extends Component {
                                     <RowShowShow label={'نام کاربری'} value={UName}/>
                                 </div>
 
-                                <div onClick={this.handelEdit.bind(this)} >
-                                    <Button color="primary" className="mt-4 pl-5 pr-5">
+                                <div onClick={this.handelEdit.bind(this)}  className='mt-4 d-flex justify-content-center align-items-center'>
+                                    <Button color="primary" className="col-6 ">
                                         <IntlMessages id="ویرایش" />
                                     </Button>
                                 </div>

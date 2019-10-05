@@ -34,7 +34,7 @@ componentDidMount(){
             let data=deleteItems();
             console.log(data)
             if (data){
-                this.props.history.push("/user/login");
+                this.props.history.push("/login");
             }
             NotificationManager.success(
                 "congratulation",
