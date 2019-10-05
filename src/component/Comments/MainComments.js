@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import SuggestionComponent from "../Items/SuggestionComponent";
-import ShowGalleryItem from "../Gallery/ShowGallery/ShowGalleryItem";
 import ShowComments from "./sub/ShowComments";
 
 class MainComments extends Component {
@@ -12,7 +11,7 @@ class MainComments extends Component {
     }
 
     GetSuggestValue(id, value) {
-        console.log('id' + id)
+        console.log('id' + id);
         // console.log('value' + value)
         this.setState({
             id:id,

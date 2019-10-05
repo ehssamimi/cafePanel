@@ -37,51 +37,59 @@ class CategoriesChartCulome extends Component {
         };
 
         let id=props.ID;
-        console.log("id categories")
-        console.log(id)
+        // console.log("id categories");
+        // console.log(id);
+        // console.log(typeof (id));
+        if (id!==undefined){
 
+            axios.get(`${Const.Amin_URL}admin/statistics/category/${id}` , {headers:headers}).then(responsive=>
+            {
+                const {Description}=responsive.data;
+                let categories=JSON.parse(Description);
+                console.log(categories);
+                let i=0;
+                var keys = Object.keys(categories);
+                let length=keys.length;
 
-        axios.get(`${Const.Amin_URL}admin/statistics/category/${id}` , {headers:headers}).then(responsive=>
-        {
-            const {Description}=responsive.data;
-            let categories=JSON.parse(Description);
-            console.log(categories);
-            let i=0;
-            var keys = Object.keys(categories);
-            let length=keys.length;
+                let datasets=[]; let labels=[];
+                for (i;i<length;i++) {
+                    let item= {
+                        label: keys[i],
+                        borderColor: colors.themeColor1,
+                        backgroundColor: colors.themeColor1_10,
+                        // data:[this.state.Rates[0]],
+                        data:[categories[keys[i]]],
+                        borderWidth: 2
+                    };
+                    let l=keys[i];
+                    datasets.push(item);
+                    // labels.push(l);
+                }
 
-            let datasets=[]; let labels=[];
-            for (i;i<length;i++) {
-                let item= {
-                    label: keys[i],
-                    borderColor: colors.themeColor1,
-                    backgroundColor: colors.themeColor1_10,
-                    // data:[this.state.Rates[0]],
-                    data:[categories[keys[i]]],
-                    borderWidth: 2
+                let barChartData={
+                    labels:labels,datasets:datasets
                 };
-                let l=keys[i];
-                datasets.push(item);
-                // labels.push(l);
-            }
-
-            let barChartData={
-                labels:labels,datasets:datasets
-            };
-            console.log(barChartData);
-            this.setState({
-                barChartData
-            })
-            //
-            // console.log(keys);
-            // console.log(length);
-            // console.log(categories[keys[0]])
+                console.log(barChartData);
+                this.setState({
+                    barChartData
+                })
+                //
+                // console.log(keys);
+                // console.log(length);
+                // console.log(categories[keys[0]])
 
 
 
 
 
-        }).catch(error=>{console.log(error)});
+            }).catch(error=>{console.log(error)});
+        }else {
+           this.setState({
+               barChartData:null,data:null
+           })
+        }
+
+
     }
 
     render() {

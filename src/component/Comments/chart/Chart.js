@@ -115,41 +115,49 @@ class Chart extends Component {
         };
 
         let id=props.ID;
+        if (id!==undefined){
 
-        axios.get(`${Const.Amin_URL}admin/statistics/item/${id}` , {headers:headers}).then(responsive=>
-        {
-            const {Description}=responsive.data;
-            let categories=JSON.parse(Description);
-            console.log(categories);
-            let {Rates,Total}=categories;
-            let data=[];let i=0;let percents=[];let darsad=[]
-            for(i=1;i<6;i++){
-                data.push(Rates[i])
-                darsad.push(((Rates[i]/Total)*100).toFixed(2))
-            }
-            console.log('darsad');
-            console.log(darsad);
+            axios.get(`${Const.Amin_URL}admin/statistics/item/${id}` , {headers:headers}).then(responsive=>
+            {
+                const {Description}=responsive.data;
+                let categories=JSON.parse(Description);
+                console.log(categories);
+                let {Rates,Total}=categories;
+                let data=[];let i=0;let percents=[];let darsad=[]
+                for(i=1;i<6;i++){
+                    data.push(Rates[i])
+                    darsad.push(((Rates[i]/Total)*100).toFixed(2))
+                }
+                console.log('darsad');
+                console.log(darsad);
 
-           let Max=(Math.max(...darsad));
-            let Push= 100-Max;
-            console.log(typeof Push);
-            console.log(typeof Max);
-            console.log(typeof darsad[1]);
-            console.log(typeof Number(darsad[1]));
-            // console.log(Push);
-            for(i=1;i<6;i++){
-                // data.push(Rates[i])
-                console.log(Push);
-                let news=Number(darsad[i])+Push;
-                console.log(news);
-                percents.push(news.toString());
-            }
+                let Max=(Math.max(...darsad));
+                let Push= 100-Max;
+                console.log(typeof Push);
+                console.log(typeof Max);
+                console.log(typeof darsad[1]);
+                console.log(typeof Number(darsad[1]));
+                // console.log(Push);
+                for(i=1;i<6;i++){
+                    // data.push(Rates[i])
+                    console.log(Push);
+                    let news=Number(darsad[i])+Push;
+                    console.log(news);
+                    percents.push(news.toString());
+                }
+                this.setState({
+                    data,Rates,percents
+                },()=>{console.log(this.state.percents[0])})
+
+
+            }).catch(error=>{console.log(error)});
+        }else {
             this.setState({
-                data,Rates,percents
-            },()=>{console.log(this.state.percents[0])})
+                data:null
+            })
+        }
 
 
-        }).catch(error=>{console.log(error)});
     }
 
     render() {

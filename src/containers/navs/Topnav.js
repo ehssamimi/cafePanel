@@ -361,9 +361,9 @@ class TopNav extends Component {
             <UncontrolledDropdown className="dropdown-menu-right">
               <DropdownToggle className="p-0" color="empty">
                   <span className="name mr-1">{`${FName} ${LName}`}</span>
-                <span>
-                  <img alt="Profile" src="/assets/img/profile-pic-l.jpg" />
-                </span>
+                {/*<span>*/}
+                  {/*<img alt="Profile" src="/assets/img/profile-pic-l.jpg" />*/}
+                {/*</span>*/}
               </DropdownToggle>
               <DropdownMenu className="mt-3" right>
                 {/*<DropdownItem>Account</DropdownItem>*/}

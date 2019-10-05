@@ -241,10 +241,10 @@ class Categories extends Component {
                                             <div>
 
                                                 <div className="w-100 d-flex ">
-                                                    <div className="col-6">
-                                                        <CropComponent label={'آیکون'} onCropImg={this.handelCrop}/>
-                                                    </div>
-                                                    <div  className="col-6">
+                                                    {/*<div className="col-6">*/}
+                                                        {/*<CropComponent label={'عکس'} onCropImg={this.handelCrop} aspect={1.5/1}/>*/}
+                                                    {/*</div>*/}
+                                                    <div  className="col-12">
                                                         <CropComponent label={'عکس'} onCropImg={this.handelCrop2} aspect={1.5/1}/>
                                                     </div>
                                                 </div>

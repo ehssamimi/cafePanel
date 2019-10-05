@@ -226,11 +226,11 @@ class RoweditCategories extends Component {
 
                                             <div>
                                                 <div className="w-100  ">
-                                                    <div className="col-12">
-                                                        <CropComponent label={'عکس'} onCropImg={this.handelCrop} aspect={1.5/1}/>
-                                                    </div>
+                                                    {/*<div className="col-12">*/}
+                                                        {/*<CropComponent label={'عکس'} onCropImg={this.handelCrop} aspect={1.5/1}/>*/}
+                                                    {/*</div>*/}
                                                     <div  className="col-12 mt-2">
-                                                        <CropComponent label={'آیکون'} onCropImg={this.handelCrop2} aspect={1.5/1}/>
+                                                        <CropComponent label={'عکس'} onCropImg={this.handelCrop2} aspect={1.5/1}/>
                                                     </div>
                                                 </div>
                                             </div>

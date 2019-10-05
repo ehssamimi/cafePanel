@@ -26,7 +26,7 @@ class CategoriesChart extends Component {
 
         return (
             <div>
-                <SuggestCategoriesComponent label='itemList' GetSuggestValue={this.GetSuggestValue.bind(this)}/>
+                <SuggestCategoriesComponent label='انتخاب دسته بندی' GetSuggestValue={this.GetSuggestValue.bind(this)}/>
 
                 <div>
                     <CategoriesChartCulome ID={id} Name={itemName}/>

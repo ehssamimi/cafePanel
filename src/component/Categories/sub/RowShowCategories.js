@@ -181,32 +181,32 @@ class RowShowCategories extends Component {
                         <div className='w-100' id={RowId} dir='rtl'>
                             <Card>
                                 <div className='d-flex justify-content-around mt-2 col-12'>
+                                    {/*<div className='col-12'>*/}
+                                        {/*<div className='d-flex justify-content-center mt-3'>*/}
+                                            {/*<IntlMessages id='عکس'/>*/}
+                                        {/*</div>*/}
+                                        {/*<div className='imgHeight20vh '>*/}
+                                            {/*<img*/}
+                                                {/*src={this.state.Icon}*/}
+                                                {/*alt={index}*/}
+                                                {/*className='w-100 br05 m-2 h-100 bg-light'*/}
+                                            {/*/>*/}
+                                        {/*</div>*/}
+                                    {/*</div>*/}
+
                                     <div className='col-12'>
                                         <div className='d-flex justify-content-center mt-3'>
                                             <IntlMessages id='عکس'/>
                                         </div>
                                         <div className='imgHeight20vh '>
-                                            <img
-                                                src={this.state.Icon}
-                                                alt={index}
-                                                className='w-100 br05 m-2 h-100 bg-light'
-                                            />
+                                        <img
+                                            src={this.state.Image}
+                                            alt={index}
+                                            className='w-100 br05 m-2 h-100 bg-light'
+                                        />
                                         </div>
+
                                     </div>
-
-                                    {/*<div className='col-6'>*/}
-                                        {/*<div className='d-flex justify-content-center mt-3'>*/}
-                                            {/*<IntlMessages id='آیکون'/>*/}
-                                        {/*</div>*/}
-                                        {/*<div className='imgHeight20vh '>*/}
-                                        {/*<img*/}
-                                            {/*src={this.state.Image}*/}
-                                            {/*alt={index}*/}
-                                            {/*className='w-100 br05 m-2 h-100 bg-light'*/}
-                                        {/*/>*/}
-                                        {/*</div>*/}
-
-                                    {/*</div>*/}
                                 </div>
                                 <div className='clearfix'></div>
                                 <CardBody>

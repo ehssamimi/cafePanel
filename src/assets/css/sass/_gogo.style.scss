@@ -1996,7 +1996,8 @@ button {
 
   .header-icon {
     font-size: 16px;
-    color: $secondary-color;
+    //color: $secondary-color;
+    color: black;
     padding-left: 0.6rem;
     padding-right: 0.6rem;
     vertical-align: initial;
@@ -6863,4 +6864,7 @@ input:-webkit-autofill {
   @include respond-below(xs) {
     font-size: 3vw !important;
   }
+}
+.height10vh{
+  height: 10vh;
 }

@@ -47,7 +47,7 @@ class ShowComments extends Component {
 
     componentWillReceiveProps(props){
         let {ID}=props;
-        console.log(ID)
+        console.log(ID);
         this.setState({
             id:ID
         });
@@ -56,15 +56,22 @@ class ShowComments extends Component {
             'Id': `${Const.ID}`
         };
 
-        axios.get(`${Const.Amin_URL}admin/item/comments/${ID}` , {headers:headers}).then(responsive=>
-        {
-            const {Description}=responsive.data;
-            // console.log(Description);
-            this.setState({
-                Description:JSON.parse(Description)
-            })
+        if (ID!==undefined){
+            axios.get(`${Const.Amin_URL}admin/item/comments/${ID}` , {headers:headers}).then(responsive=>
+            {
+                const {Description}=responsive.data;
+                // console.log(Description);
+                this.setState({
+                    Description:JSON.parse(Description)
+                })
 
-        }).catch(error=>{console.log(error)});
+            }).catch(error=>{console.log(error)});
+        }else{
+            this.setState({
+                Description:'',data:null
+            })
+        }
+
         // console.log(this.state.categories)
     }
 

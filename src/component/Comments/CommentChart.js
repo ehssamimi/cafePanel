@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
 import SuggestionComponent from "../Items/SuggestionComponent";
-import ShowComments from "./sub/ShowComments";
-import ShowGalleryItem from "../Gallery/ShowGallery/ShowGalleryItem";
 import Chart from "./chart/Chart";
 
 class CommentChart extends Component {
@@ -13,7 +11,7 @@ class CommentChart extends Component {
     }
 
     GetSuggestValue(id, value) {
-        console.log('id' + id)
+        console.log('id' + id);
         // console.log('value' + value)
         this.setState({
             id:id,
