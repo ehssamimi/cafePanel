@@ -7,9 +7,6 @@ import MainComments from "./MainComments";
 import CommentChart from "./CommentChart";
 import CategoriesChart from "./CategoriesChart";
 
-
-
-
 const Comments = ({ match }) => (
     <div className="dashboard-wrapper">
         <Switch>

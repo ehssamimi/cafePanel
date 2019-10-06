@@ -3078,6 +3078,8 @@ main {
 
 .dashboard-search {
   height: 650px;
+  width: 100%;
+  //height: 40vh;
   background: url(/assets/img/plane.jpg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -5770,12 +5772,14 @@ input:-webkit-autofill {
 .auth-card {
   display: flex;
   flex-direction: row;
+  height: 100%;
   @include depth(1);
 
   .image-side {
     width: 40%;
-    background: url("/assets/img/login-balloon.jpg") no-repeat center top;
+    background: url("/assets/img/login-balloon.jpg") no-repeat center ;
     background-size: cover;
+    //height: 100%;
     padding: 80px 40px;
 
     .h3 {
@@ -5828,6 +5832,8 @@ input:-webkit-autofill {
     }
   }
 }
+
+
 
 /* 32.Html Editors */
 .html-editor {
@@ -6867,4 +6873,7 @@ input:-webkit-autofill {
 }
 .height10vh{
   height: 10vh;
+}
+.height80vh{
+  height: 70vh!important;
 }

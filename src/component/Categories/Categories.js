@@ -251,7 +251,6 @@ class Categories extends Component {
                                             </div>
 
 
-
                                             <Button color="primary" type="submit" className="col-2 rowInput">
                                                 ارسال
                                             </Button>

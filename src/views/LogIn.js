@@ -84,15 +84,15 @@ class Login extends Component {
     render() {
         return (
             <Row className="h-100 mt10">
-                <Colxx xxs="12" md="10" className="mx-auto my-auto">
+                <Colxx xxs="12" md="10" className="mx-auto my-auto height80vh ">
                 {/*<Colxx xxs="12" md="10" className="d-flex align-items-center">*/}
                     <Card className="auth-card">
                         <div className="position-relative image-side ">
-                            <p className="text-white h2">کافه آرت </p>
-                            <p className="white mb-0" dir='rtl'>
-                             وارد شوید
-                                <br />
-                            </p>
+                            {/*<p className=" h2">کافه آرت </p>*/}
+                            {/*<p className=" mb-0" dir='rtl'>*/}
+                             {/*وارد شوید*/}
+                                {/*<br />*/}
+                            {/*</p>*/}
                         </div>
                         <div className="form-side">
                             <NavLink to="/" className='d-none' id='redirect2' onClick={this.handelClickRedirect.bind(this)}><button id='redirect' onClick={this.handelClickRedirect.bind(this)} > !انتقال</button></NavLink>
