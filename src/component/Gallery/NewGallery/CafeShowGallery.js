@@ -23,7 +23,7 @@ class CafeShowGallery extends Component {
         axios.get(`${Const.Amin_URL}cafe/images` , {headers:headers}).then(responsive=>
         {
             const {Description}=responsive.data;
-            console.log(Description);
+            // console.log(Description);
             this.setState({
                 Description:JSON.parse(Description)
             })
@@ -57,7 +57,7 @@ class CafeShowGallery extends Component {
     render() {
         let{Description,id}=this.state;
 
-        console.log(Description);
+        // console.log(Description);
         return (
             <div>
 

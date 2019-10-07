@@ -26,9 +26,9 @@ class ShowCategories extends Component {
         {
             const {Description,State}=responsive.data;
             if (State){
-                console.log(Description);
+                // console.log(Description);
                 let DES=JSON.parse(Description);
-                console.log(DES);
+                // console.log(DES);
                 this.setState({
                     modes:DES
                 });

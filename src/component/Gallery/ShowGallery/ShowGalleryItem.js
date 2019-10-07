@@ -18,7 +18,7 @@ class ShowGalleryItem extends Component {
 
     componentWillReceiveProps(props){
         let {ID}=props;
-        console.log(ID)
+        // console.log(ID)
         this.setState({
             id:ID
         });
@@ -63,7 +63,7 @@ class ShowGalleryItem extends Component {
     }
     render() {
         let{Description,id}=this.state;
-        console.log(Description);
+        // console.log(Description);
         return (
             <div className='br05 ' >
                 {Description ? Description.map((todo, index) => <LiShowGallery id={todo.Id} key={index} index={index}

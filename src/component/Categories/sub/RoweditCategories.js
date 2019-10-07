@@ -37,8 +37,8 @@ class RoweditCategories extends Component {
         }
     }
     componentDidMount(){
-        console.log(this.props.Title);
-        console.log(this.props.Rank);
+        // console.log(this.props.Title);
+        // console.log(this.props.Rank);
         this.setState({
             Title:this.props.Title,
             Rank:this.props.Rank,
@@ -49,14 +49,14 @@ class RoweditCategories extends Component {
     onSubmit= e => {
 
         let {crop2,crop}=this.state;
-        console.log('crop: '+crop);
-        console.log('crop2: '+crop2);
+        // console.log('crop: '+crop);
+        // console.log('crop2: '+crop2);
 
 
     };
     handelCrop = (src,crop,imgIcon) => {
 
-        console.log(crop);
+        // console.log(crop);
 
         this.setState({
             src,crop,imgIcon
@@ -66,7 +66,7 @@ class RoweditCategories extends Component {
     };
     handelCrop2 = (src2,crop2,imgIcon2) => {
 
-        console.log(crop2);
+        // console.log(crop2);
 
         this.setState({
             src2,crop2,imgIcon2
@@ -83,7 +83,7 @@ class RoweditCategories extends Component {
             // TypeKind: values.TypeKind.value
             // Names: values.Names.value,
         };
-        console.log(payload);
+        // console.log(payload);
         let {crop2,crop,CatId}=this.state;
 
 
@@ -135,7 +135,7 @@ class RoweditCategories extends Component {
 
             // let DES=JSON.parse(Description);
             // this.props.inprogress(DES);x
-            console.log(Description)
+            // console.log(Description)
         }).catch(error=>{
             // this.setState({
             //     loaderActive:false

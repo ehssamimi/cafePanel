@@ -122,7 +122,7 @@ class RowShowCategories extends Component {
 
             // let DES=JSON.parse(Description);
             // this.props.inprogress(DES);x
-            console.log(Description)
+            // console.log(Description)
         }).catch(error=>{
             // this.setState({
             //     loaderActive:false
@@ -152,7 +152,7 @@ class RowShowCategories extends Component {
     };
 
     GetBackToMain(value){
-        console.log('value:  '+value)
+        // console.log('value:  '+value)
         if (value === true){
             console.log('we edit some fechture');
             window.location.reload()
@@ -161,7 +161,7 @@ class RowShowCategories extends Component {
             this.setState({
                 edit:true
             })
-            console.log('we didnt edit some fechture');
+            // console.log('we didnt edit some fechture');
         }
     }
 
@@ -169,7 +169,7 @@ class RowShowCategories extends Component {
 
         let { Title, RowId,IconUrl,ImageUrl,Created_at}=this.props.input;
         let{newDateCreate,edit}=this.state;
-        console.log('edit: '+edit)
+        // console.log('edit: '+edit)
         // console.log(this.props.input.RowId);
         // console.log(this.props.input._id);
 

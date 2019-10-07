@@ -245,12 +245,12 @@ class AddItem extends Component {
 
                                         </div>
                                         <div className="w-100 d-flex mt-3 ">
-                                            <div className="col-6">
-                                                <CropComponent label={'آیکون'} onCropImg={this.handelCrop}  aspect={3/2}/>
+                                            <div className="col-12">
+                                                <CropComponent label={'عکس منو'} onCropImg={this.handelCrop}  aspect={3/2}/>
                                             </div>
-                                            <div  className="col-6">
-                                                <CropComponent label={'عکس'} onCropImg={this.handelCrop2}  aspect={3/2}/>
-                                            </div>
+                                            {/*<div  className="col-6">*/}
+                                                {/*<CropComponent label={'عکس'} onCropImg={this.handelCrop2}  aspect={3/2}/>*/}
+                                            {/*</div>*/}
                                         </div>
                                         <Button color="primary" type="submit" className="col-2 rowInput">
                                             ارسال

@@ -32,7 +32,7 @@ class AddGalleryItem extends Component {
     };
     componentWillReceiveProps(props){
         let {id,itemName}=props;
-        console.log('id' + id);
+        // console.log('id' + id);
         // console.log('value' + value)
         this.setState({
             id,
@@ -41,7 +41,7 @@ class AddGalleryItem extends Component {
     }
     handelSubmit(e){
         e.preventDefault();
-        console.log('submit');
+        // console.log('submit');
 
 
         let headers = {
@@ -58,7 +58,7 @@ class AddGalleryItem extends Component {
             'Gallery': [crop],
 
         };
-        console.log(BODY);
+        // console.log(BODY);
         //
         axios.post(`${Const.Amin_URL}admin/item/gallery/image` ,BODY, {headers:headers}).then(responsive=>
         {
@@ -92,7 +92,7 @@ class AddGalleryItem extends Component {
 
             // let DES=JSON.parse(Description);
             // this.props.inprogress(DES);x
-            console.log(Description)
+            // console.log(Description)
         }).catch(error=>{
             this.setState({
                 loaderActive:false

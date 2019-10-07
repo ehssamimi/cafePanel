@@ -46,8 +46,8 @@ class CarouselEdite extends Component {
 
         }
 
-        console.log(this.props.data);
-        console.log(Data)
+        // console.log(this.props.data);
+        // console.log(Data)
     }
     render() {
         // console.log(this.props.data);

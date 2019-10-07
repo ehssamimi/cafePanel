@@ -28,13 +28,13 @@ class CafeAddGallery extends Component {
         this.setState({
             src,crop,imgIcon
         },()=>{
-            console.log(crop)
+            // console.log(crop)
         });
     };
 
     handelSubmit(e){
         e.preventDefault();
-        console.log('submit');
+        // console.log('submit');
 
         let headers = {
             'Token':`${Const.Token}`,
@@ -47,7 +47,7 @@ class CafeAddGallery extends Component {
         let BODY={
             'Image': crop
         };
-        console.log(BODY);
+        // console.log(BODY);
         //
         axios.post(`${Const.Amin_URL}admin/cafe/image/add` ,BODY, {headers:headers}).then(responsive=>
         {
@@ -79,7 +79,7 @@ class CafeAddGallery extends Component {
 
             // let DES=JSON.parse(Description);
             // this.props.inprogress(DES);x
-            console.log(Description)
+            // console.log(Description)
         }).catch(error=>{
             this.setState({
                 loaderActive:false

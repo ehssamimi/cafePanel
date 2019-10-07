@@ -26,8 +26,8 @@ class Gallery extends Component {
     }
 
     GetSuggestValue(id, value) {
-        console.log('id' + id);
-        console.log('value' + value);
+        // console.log('id' + id);
+        // console.log('value' + value);
         this.setState({
             id
         })
@@ -63,7 +63,7 @@ class Gallery extends Component {
     // };
 
     handelMultiFiles(files){
-        console.log(files);
+        // console.log(files);
         this.setState({
             files
         })
@@ -79,12 +79,12 @@ class Gallery extends Component {
             'Id': `${Const.ID}`
         };
         let{id,files}=this.state;
-        console.log('files');
-        console.log(files);
-        console.log(typeof files);
-        console.log('id');
-        console.log(id);
-        console.log(typeof id);
+        // console.log('files');
+        // console.log(files);
+        // console.log(typeof files);
+        // console.log('id');
+        // console.log(id);
+        // console.log(typeof id);
 
 
         let BODY={
@@ -127,7 +127,7 @@ class Gallery extends Component {
 
             // let DES=JSON.parse(Description);
             // this.props.inprogress(DES);x
-            console.log(Description)
+            // console.log(Description)
         }).catch(error=>{
             // this.setState({
             //     loaderActive:false

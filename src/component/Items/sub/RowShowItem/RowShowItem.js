@@ -58,7 +58,7 @@ class RowShowItem extends Component {
             price
         });
 
-        console.log(this.props.input);
+        // console.log(this.props.input);
         let headers = {
             'Token': `${Const.Token}`,
             'Id': `${Const.ID}`
@@ -138,7 +138,7 @@ class RowShowItem extends Component {
                 );
             }
 
-            console.log(Description)
+            // console.log(Description)
         }).catch(error=>{
             // this.setState({
             //     loaderActive:false
@@ -172,16 +172,16 @@ class RowShowItem extends Component {
         // console.log(value);
     }
     GetBackToMain(value){
-        console.log('value:  '+value)
+        // console.log('value:  '+value)
         if (value === true){
-            console.log('we edit some fechture');
+            // console.log('we edit some fechture');
             window.location.reload()
 
         } else {
             this.setState({
                 edit:true
             })
-            console.log('we didnt edit some fechture');
+            // console.log('we didnt edit some fechture');
         }
     }
 
@@ -189,8 +189,8 @@ class RowShowItem extends Component {
         // id:null,itemName:null,
         let { title,Rank,edit,price,id,itemName}=this.state;
         let {index , input}=this.props;
-        console.log(input._id);
-        console.log(input.Description);
+        // console.log(input._id);
+        // console.log(input.Description);
         // console.log(index)
         // let {index , img}=this.props;
         return (
@@ -201,7 +201,7 @@ class RowShowItem extends Component {
                             <Card>
                                 <div className=' d-flex justify-content-between w-100  mt-2 col-12 '>
 
-                                    <div className='col-6'>
+                                    <div className='col-12'>
                                         <div className='d-flex justify-content-center mt-3'>
                                             <IntlMessages id='عکس منو'/>
                                         </div>
@@ -214,18 +214,18 @@ class RowShowItem extends Component {
                                         </div>
                                     </div>
 
-                                    <div className='col-6'>
-                                        <div className='d-flex justify-content-center mt-3'>
-                                            <IntlMessages id='عکس آیتم'/>
-                                        </div>
-                                        <div className='imgHeight20vh '>
-                                            <img
-                                                src={this.state.ItemImageUrl}
-                                                alt={index}
-                                                className='w-100 br05 m-2 h-100 bg-light'
-                                            />
-                                        </div>
-                                    </div>
+                                    {/*<div className='col-6'>*/}
+                                        {/*<div className='d-flex justify-content-center mt-3'>*/}
+                                            {/*<IntlMessages id='عکس آیتم'/>*/}
+                                        {/*</div>*/}
+                                        {/*<div className='imgHeight20vh '>*/}
+                                            {/*<img*/}
+                                                {/*src={this.state.ItemImageUrl}*/}
+                                                {/*alt={index}*/}
+                                                {/*className='w-100 br05 m-2 h-100 bg-light'*/}
+                                            {/*/>*/}
+                                        {/*</div>*/}
+                                    {/*</div>*/}
 
                                 </div>
 
@@ -233,7 +233,7 @@ class RowShowItem extends Component {
                                 <div className='clearfix'></div>
 
                                 <CardBody>
-                                    <div className="col-12 d-flex ">
+                                    <div className="col-12 d-flex paddingZero ">
                                         <div className="col-6   paddingZero">
                                             <RowShowShow label={"عنوان"} value={input.Title} />
                                         </div>
@@ -256,13 +256,13 @@ class RowShowItem extends Component {
                                         </div>
 
                                     </div>
-                                    <div className="col-12 d-flex mt-2">
-                                        <div className="col-12  paddingZero">
+                                    <div className="col-12 d-flex mt-2 paddingZero">
+                                        {/*<div className="col-12  paddingZero">*/}
                                             <ShowDescriptionItems label={"توضیحات"} value={input.Description}/>
                                             {/*<RowShowShow label={"توضیحات"} value={input.Description} />*/}
                                         </div>
 
-                                    </div>
+                                    {/*</div>*/}
                                     <CarouselEdite  data={input.Gallery}/>
 
                                     <span className=' badge-danger deleteBadge2 btn-shadow' onClick={this.toggle}>

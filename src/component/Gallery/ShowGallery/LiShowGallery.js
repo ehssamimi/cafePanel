@@ -134,7 +134,7 @@ class LiShowGallery extends Component {
 
             // let DES=JSON.parse(Description);
             // this.props.inprogress(DES);x
-            console.log(Description)
+            // console.log(Description)
         }).catch(error=>{
             // this.setState({
             //     loaderActive:false
