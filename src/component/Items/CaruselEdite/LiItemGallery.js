@@ -3,12 +3,13 @@ import { Row, Card  } from "reactstrap";
 import * as Const from "../../Const";
 import axios from "axios";
 import ax from "../../new/loader.gif";
+import LoaderComponent from "../../LoaderComponent";
 
 class LiItemGallery extends Component {
     constructor(props) {
         super(props);
         this.state={
-            Img:ax
+            Img:''
         }
     }
 
@@ -34,9 +35,16 @@ class LiItemGallery extends Component {
         return (
             <div className="pr-3 pl-3 ">
                 <Card className="flex-row">
-                    <div className="w-100 position-relative imagheight40vh">
-                        <img className="card-img-left br05" src={Img} alt={item} />
-                    </div>
+                    {
+                        Img!==''?<div className="w-100 position-relative imagheight40vh">
+                            <img className="card-img-left br05" src={Img} alt={item} />
+                        </div>:
+                            <div className="w-100 position-relative imagheight40vh d-flex align-items-center">
+                                <LoaderComponent/>
+                            </div>
+
+                    }
+
                 </Card>
             </div>
         );

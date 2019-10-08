@@ -7,6 +7,7 @@ import RowShowComments from "../Comments/sub/RowShowComments";
 import RowShowCategories from "./sub/RowShowCategories";
 import * as Const from "../Const";
 import axios from "axios";
+import LoaderComponent from "../LoaderComponent";
 
 class ShowCategories extends Component {
     constructor(props) {
@@ -45,7 +46,7 @@ class ShowCategories extends Component {
             <div className="w-100 ">
                 <Row>
                     {modes!==null?modes.map((todo ,index)=><div className="col-sm-12 col-md-4 mt-3" key={index}><RowShowCategories key={index} input={todo} index={index} img={breakfast}/></div> ):
-                        <div className='d-flex' ><img src={loader} alt={loader} className='loader'/></div>
+                        <div className='w-100 h60 d-flex align-items-center'><LoaderComponent/></div>
                     }
                 </Row>
             </div>

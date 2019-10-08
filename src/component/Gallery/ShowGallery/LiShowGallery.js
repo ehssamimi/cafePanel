@@ -149,8 +149,8 @@ class LiShowGallery extends Component {
             <div className='br05 ' id={id}>
                 <Card className={classname}>
                 {/*<img src={src} alt={index} className='imagheight40vh' />*/}
-                <div className='imgHeight30vh'>
-                    <img src={src} alt={index}  className='w-100 h-100' />
+                <div className='imgHeight40vh'>
+                    <img src={src} alt={index}  className='imgSelf p-2' />
                 </div>
 
                 <span

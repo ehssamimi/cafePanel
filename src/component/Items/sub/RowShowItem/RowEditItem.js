@@ -175,7 +175,6 @@ class RowEditItem extends Component {
     render() {
         const { crop, croppedImageUrl, src,crop2, croppedImageUrl2, src2 ,option,isEdit} = this.state;
         // const option=[{'name':'breakfast'},{'name':'dinner'},{'name':'lunch'},{'name':'hot drink'},{'name':'cold Drink'}];
-
         return (
 
             // this.state.loaderActive? <div className="d-flex justify-content-center loaderImg "><img src={loader} alt={loader}/></div>:
@@ -183,101 +182,7 @@ class RowEditItem extends Component {
                 <Colxx xxs="12">
                     <Card>
                         <CardBody>
-                            {/*<CardTitle className='float-right'>*/}
-                                {/*<IntlMessages id="ویرایش ارقام " />*/}
-                            {/*</CardTitle>*/}
 
-                            {/*<Formik*/}
-                                {/*initialValues={{*/}
-                                    {/*Title: this.props.Title,*/}
-                                    {/*Price: this.props.price,*/}
-                                    {/*Description: this.props.Description*/}
-                                {/*}}*/}
-                                {/*validationSchema={SignupSchema}*/}
-                                {/*onSubmit={this.handleSubmit.bind(this)}*/}
-                            {/*>*/}
-                                {/*{({*/}
-                                      {/*handleSubmit,*/}
-                                      {/*setFieldValue,*/}
-                                      {/*setFieldTouched,*/}
-                                      {/*handleChange,*/}
-                                      {/*handleBlur,*/}
-                                      {/*values,*/}
-                                      {/*errors,*/}
-                                      {/*touched,*/}
-                                      {/*isSubmitting*/}
-                                  {/*}) => (*/}
-                                    {/*<Form className="av-tooltip tooltip-label-bottom d-flex col-12 flex-column">*/}
-                                        {/*<div className="w-100 d-flex ">*/}
-                                            {/*<div className="col-sm-4 rowInput">*/}
-                                                {/*<FormGroup className="form-group has-float-label position-relative ">*/}
-                                                    {/*<Label  >*/}
-                                                        {/*<IntlMessages id="عنوان"  />*/}
-                                                    {/*</Label>*/}
-                                                    {/*<Field className="form-control fontSizeInputText " name="Title"  />*/}
-                                                    {/*{errors.Title && touched.Title ? (*/}
-                                                        {/*<div className="invalid-feedback d-block">*/}
-                                                            {/*{errors.Title}*/}
-                                                        {/*</div>*/}
-                                                    {/*) : null}*/}
-                                                {/*</FormGroup>*/}
-                                            {/*</div>*/}
-                                            {/*<div className="col-sm-4 rowInput">*/}
-                                                {/*<FormGroup className="form-group has-float-label position-relative">*/}
-                                                    {/*<Label>*/}
-                                                        {/*<IntlMessages id="قیمت" />*/}
-                                                    {/*</Label>*/}
-                                                    {/*<Field className="form-control fontSizeInputText " name="Price" type='number' />*/}
-                                                    {/*{errors.Price && touched.Price ? (*/}
-                                                        {/*<div className="invalid-feedback d-block">*/}
-                                                            {/*{errors.Price}*/}
-                                                        {/*</div>*/}
-                                                    {/*) : null}*/}
-                                                {/*</FormGroup>*/}
-                                            {/*</div>*/}
-                                            {/*<div className="col-sm-4 rowInput">*/}
-                                                {/*<SuggestCategoriesComponent label='itemList' GetSuggestValue={this.GetSuggestValue.bind(this)}/>*/}
-                                            {/*</div>*/}
-                                        {/*</div>*/}
-                                        {/*<div className="w-100 d-flex ">*/}
-                                            {/*<div className="col-sm-12 rowInput">*/}
-                                                {/*<FormGroup className="form-group has-float-label position-relative">*/}
-                                                    {/*<Label>*/}
-                                                        {/*<IntlMessages id="Description" />*/}
-                                                    {/*</Label>*/}
-                                                    {/*<Field className="form-control" name="Description" component="textarea" rows="6" />*/}
-                                                    {/*{errors.Description && touched.Description ? (*/}
-                                                        {/*<div className="invalid-feedback d-block">*/}
-                                                            {/*{errors.Description}*/}
-                                                        {/*</div>*/}
-                                                    {/*) : null}*/}
-                                                {/*</FormGroup>*/}
-                                            {/*</div>*/}
-
-                                        {/*</div>*/}
-
-                                        {/*<div className="w-100  mt-3 ">*/}
-                                            {/*<div className="col-12">*/}
-                                                {/*<CropComponent label={'آیکون'} onCropImg={this.handelCrop} aspect={2/3}/>*/}
-                                            {/*</div>*/}
-                                            {/*<div  className="col-12">*/}
-                                                {/*<CropComponent label={'عکس'} onCropImg={this.handelCrop2} aspect={2/3}/>*/}
-                                            {/*</div>*/}
-                                        {/*</div>*/}
-
-                                        {/*<div className='d-flex w-100 mt-3'>*/}
-                                            {/*<Button color="primary" type="submit" className="col-3 rowInput">*/}
-                                                {/*ارسال*/}
-                                            {/*</Button>*/}
-
-                                            {/*<Button  className="col-3  btn-warning mr-auto  br05 d-flex justify-content-center align-items-center" onClick={this.handelBack.bind(this)}>*/}
-                                                {/*برگشت*/}
-                                            {/*</Button>*/}
-                                        {/*</div>*/}
-                                    {/*</Form>*/}
-
-                                {/*)}*/}
-                            {/*</Formik>*/}
                             <div>
                                 <Button
                                     className="mr-2 mb-2"

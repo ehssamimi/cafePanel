@@ -3,6 +3,7 @@ import * as Const from "../../Const";
 import axios from "axios";
 import LiShowGallery from "../ShowGallery/LiShowGallery";
 import loader from "../../new/loader.gif";
+import LoaderComponent from "../../LoaderComponent";
 
 class CafeShowGallery extends Component {
     constructor(props) {
@@ -62,9 +63,10 @@ class CafeShowGallery extends Component {
             <div>
 
                 <div className='br05 ' >
-                    {Description?Description.Images.map((todo ,index)=><LiShowGallery id={todo.ImageId} key={index} index={index} src={todo.Image}  classname=' col-sm-12 col-md-4 col-lg-3 mt-3 float-left mr-2'/>  ):<div className='d-flex' ><img src={loader} alt={loader} className='loader'/></div>}
-                    {/*{Description?Description.map((todo ,index)=><LiShowGallery id={todo.Id} key={index} index={index} src={todo.ImageUrl}  itemId={id} classname='  mt-3 float-left mr-2'/>  ):""}*/}
-                </div>
+
+                    {Description?Description.Images.map((todo ,index)=><LiShowGallery id={todo.ImageId} key={index} index={index} src={todo.Image}  classname=' col-sm-12 col-md-2  mt-3 float-left ml-3 paddingZero'/>  ):<div className='w-100 h60 d-flex align-items-center'><LoaderComponent/></div>}
+
+                    </div>
 
 
             </div>

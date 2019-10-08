@@ -21,7 +21,7 @@ class App extends Component {
     return (
       <AppLayout>
         <Switch>
-            <Redirect exact from={`${match.url}/`} to={`${match.url}/dashboards`} />
+            <Redirect exact from={`${match.url}/`} to={`${match.url}/maindashboards`} />
             <Route path={`${match.url}/maindashboards`} component={DashboardMain}/>
             <Route path={`${match.url}/dashboards`} component={DashboardRooot}/>
             <Route path={`${match.url}/items`} component={Items}/>

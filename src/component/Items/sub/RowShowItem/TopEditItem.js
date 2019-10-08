@@ -105,11 +105,11 @@ class TopEditItem extends Component {
 
                                         <div className="w-100  mt-3 ">
                                             <div className="col-12">
-                                                <CropComponent label={'آیکون'} onCropImg={handelCrop} aspect={3/2}/>
+                                                <CropComponent label={'عکس'} onCropImg={handelCrop} aspect={3/2}/>
                                             </div>
-                                            <div  className="col-12">
-                                                <CropComponent label={'عکس'} onCropImg={handelCrop2} aspect={3/2}/>
-                                            </div>
+                                            {/*<div  className="col-12">*/}
+                                                {/*<CropComponent label={'عکس'} onCropImg={handelCrop2} aspect={3/2}/>*/}
+                                            {/*</div>*/}
                                         </div>
 
                                         <div className='d-flex w-100 mt-3'>

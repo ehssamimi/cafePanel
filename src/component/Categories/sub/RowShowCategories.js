@@ -12,6 +12,7 @@ import ax from './../../new/loader.gif'
 import DeleteModal from "../../DeleteModal";
 import RoweditCategories from "./RoweditCategories";
 import AddGalleryItem from "../../Items/twoStepAddItem/AddGalleryItem";
+import LoaderComponent from "../../LoaderComponent";
 
 var classNames = require('classnames');
 
@@ -28,7 +29,7 @@ class RowShowCategories extends Component {
                 'col-5': true,
             }),
             Icon:ax,
-            Image:ax
+            Image:''
         }
     }
     toggle = () => {
@@ -199,11 +200,23 @@ class RowShowCategories extends Component {
                                             <IntlMessages id='عکس'/>
                                         </div>
                                         <div className='imgHeight20vh '>
-                                        <img
-                                            src={this.state.Image}
-                                            alt={index}
-                                            className='w-100 br05 m-2 h-100 bg-light'
-                                        />
+                                            {
+                                                this.state.Image.length > 1?
+                                                    <img
+                                                        src={this.state.Image}
+                                                        alt={index}
+                                                        // className='w-100 br05 m-2 h-100 bg-light'
+                                                        // className='imgSelf bg-light br05 m-2'
+                                                        className='imgSelf bg-light br05 m-2'
+                                                    />:<LoaderComponent/>
+                                            }
+
+
+                                        {/*<img*/}
+                                            {/*src={this.state.Image}*/}
+                                            {/*alt={index}*/}
+                                            {/*className='w-100 br05 m-2 h-100 bg-light'*/}
+                                        {/*/>*/}
                                         </div>
 
                                     </div>

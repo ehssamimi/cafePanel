@@ -83,55 +83,62 @@ class Login extends Component {
 
     render() {
         return (
-            <Row className="h-100 mt10">
-                <Colxx xxs="12" md="10" className="mx-auto my-auto height80vh ">
-                {/*<Colxx xxs="12" md="10" className="d-flex align-items-center">*/}
-                    <Card className="auth-card">
-                        <div className="position-relative image-side ">
-                            {/*<p className=" h2">کافه آرت </p>*/}
-                            {/*<p className=" mb-0" dir='rtl'>*/}
-                             {/*وارد شوید*/}
+            <div className='w-100 h-100'>
+                <div className='bgBlur  '>
+aa
+                </div>
+                <Row className="loginForm ">
+
+                    <Colxx xxs="12" md="10" className="mx-auto my-auto height80vh ">
+                        {/*<Colxx xxs="12" md="10" className="d-flex align-items-center">*/}
+                        <Card className="auth-card">
+                            <div className="position-relative image-side ">
+                                {/*<p className=" h2">کافه آرت </p>*/}
+                                {/*<p className=" mb-0" dir='rtl'>*/}
+                                {/*وارد شوید*/}
                                 {/*<br />*/}
-                            {/*</p>*/}
-                        </div>
-                        <div className="form-side">
-                            <NavLink to="/" className='d-none' id='redirect2' onClick={this.handelClickRedirect.bind(this)}><button id='redirect' onClick={this.handelClickRedirect.bind(this)} > !انتقال</button></NavLink>
-                            {/*<NavLink to={`/`} className="white">*/}
-                            {/*<span className="logo-single" />*/}
-                            {/*</NavLink>*/}
-                            <CardTitle className="mb-4 d-flex justify-content-center">
-                                <IntlMessages id="ورود به پنل" />
-                            </CardTitle>
-                            <Form>
-                                <Label className="form-group has-float-label mb-4">
-                                    <Input type="text" name='email' value={this.state.email} onChange={this.handelChange.bind(this)}/>
-                                    <IntlMessages id="نام کاربری" />
-                                </Label>
-                                <Label className="form-group has-float-label mb-4">
-                                    <Input type="password"  name='password' onChange={this.handelChange.bind(this)} value={this.state.password}/>
-                                    <IntlMessages
-                                        id="رمز عبور"
-                                        // defaultValue={this.state.password}
-                                    />
-                                </Label>
-                                <div className="d-flex justify-content-center align-items-center">
-                                    {/*<NavLink to={`/forgot-password`}>*/}
-                                    {/*<IntlMessages id="user.forgot-password-question" />*/}
-                                    {/*</NavLink>*/}
-                                    <Button
-                                        color="primary"
-                                        className="btn-shadow"
-                                        size="lg"
-                                        onClick={() => this.onUserLogin()}
-                                    >
-                                        <IntlMessages id="ورورد" />
-                                    </Button>
-                                </div>
-                            </Form>
-                        </div>
-                    </Card>
-                </Colxx>
-            </Row>
+                                {/*</p>*/}
+                            </div>
+                            <div className="form-side">
+                                <NavLink to="/" className='d-none' id='redirect2' onClick={this.handelClickRedirect.bind(this)}><button id='redirect' onClick={this.handelClickRedirect.bind(this)} > !انتقال</button></NavLink>
+                                {/*<NavLink to={`/`} className="white">*/}
+                                {/*<span className="logo-single" />*/}
+                                {/*</NavLink>*/}
+                                <CardTitle className="mb-4 d-flex justify-content-center">
+                                    <IntlMessages id="ورود به پنل" />
+                                </CardTitle>
+                                <Form>
+                                    <Label className="form-group has-float-label mb-4">
+                                        <Input type="text" name='email' value={this.state.email} onChange={this.handelChange.bind(this)}/>
+                                        <IntlMessages id="نام کاربری" />
+                                    </Label>
+                                    <Label className="form-group has-float-label mb-4">
+                                        <Input type="password"  name='password' onChange={this.handelChange.bind(this)} value={this.state.password}/>
+                                        <IntlMessages
+                                            id="رمز عبور"
+                                            // defaultValue={this.state.password}
+                                        />
+                                    </Label>
+                                    <div className="d-flex justify-content-center align-items-center">
+                                        {/*<NavLink to={`/forgot-password`}>*/}
+                                        {/*<IntlMessages id="user.forgot-password-question" />*/}
+                                        {/*</NavLink>*/}
+                                        <Button
+                                            color="primary"
+                                            className="btn-shadow"
+                                            size="lg"
+                                            onClick={() => this.onUserLogin()}
+                                        >
+                                            <IntlMessages id="ورورد" />
+                                        </Button>
+                                    </div>
+                                </Form>
+                            </div>
+                        </Card>
+                    </Colxx>
+                </Row>
+            </div>
+
         );
     }
 }

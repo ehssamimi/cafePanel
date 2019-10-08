@@ -145,7 +145,7 @@ export default class AdminProfile extends Component {
                                 <Label className="form-group has-float-label mb-4 fontFamily">
                                     <Input type="text" name='FName' value={FName} onChange={this.handelChange.bind(this)}/>
                                     {/*<span className='fontFamily'>"نام"</span>*/}
-                                    <IntlMessages id='تام' />
+                                    <IntlMessages id='نام' />
                                 </Label>
                                 <Label className="form-group has-float-label mb-4">
                                     <Input type="text"  name='LName' onChange={this.handelChange.bind(this)} value={LName}/>

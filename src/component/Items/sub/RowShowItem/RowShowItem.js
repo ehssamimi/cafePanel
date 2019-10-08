@@ -18,6 +18,7 @@ import AddGalleryItem from "../../twoStepAddItem/AddGalleryItem";
 import ShowDescriptionItems from "../../showDescriptionItems";
 import ModalGallery from "../../twoStepAddItem/ModalGallery";
 import ax from "../../../new/loader.gif";
+import LoaderComponent from "../../../LoaderComponent";
 var classNames = require('classnames');
 
 // Gallery: (2) [{…}, {…}]
@@ -45,8 +46,8 @@ class RowShowItem extends Component {
                 'col-5': true,
 
             }),
-            MenuImageUrl:ax,
-            ItemImageUrl:ax
+            MenuImageUrl:'',
+            ItemImageUrl:''
 
         }
     }
@@ -206,11 +207,23 @@ class RowShowItem extends Component {
                                             <IntlMessages id='عکس منو'/>
                                         </div>
                                         <div className='imgHeight20vh '>
-                                            <img
+                                            {
+                                                this.state.MenuImageUrl.length > 1?
+                                                <img
                                                 src={this.state.MenuImageUrl}
                                                 alt={index}
-                                                className='w-100 br05 m-2 h-100 bg-light'
-                                            />
+                                                // className='w-100 br05 m-2 h-100 bg-light'
+                                                // className='imgSelf bg-light br05 m-2'
+                                                className='imgSelf bg-light br05 m-2'
+                                                />:<LoaderComponent/>
+                                            }
+                                            {/*<img*/}
+                                                {/*src={this.state.MenuImageUrl}*/}
+                                                {/*alt={index}*/}
+                                                {/*// className='w-100 br05 m-2 h-100 bg-light'*/}
+                                                {/*// className='imgSelf bg-light br05 m-2'*/}
+                                                {/*className='objectFitContent bg-light br05 m-2'*/}
+                                            {/*/>*/}
                                         </div>
                                     </div>
 

@@ -33,9 +33,9 @@ var classNames = require('classnames');
 
 const SignupSchema = Yup.object().shape({
     Title: Yup.string()
-        .required("Kill number is required!"),
+        .required("عنوان اجباری است "),
     Rank: Yup.number()
-        .required("MatchType is required!"),
+        .required("الویت در نمایش اجباری است!"),
     // MatchName: Yup.string()
     //     .required("MatchName is required!"),
     // ImageUrl: Yup.string()
