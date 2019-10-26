@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="388a1a0b-0d7f-4fe5-952f-773068ade2a5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/node_modules/react-persian-calendar-date-picker/lib/DatePicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-persian-calendar-date-picker/lib/DatePicker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/sass/_gogo.style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/sass/_gogo.style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/DashBoards/sub/dashboardComponents/AdminProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/DashBoards/sub/dashboardComponents/AdminProfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/DashBoards/sub/dashboardComponents/DashboardTopItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/DashBoards/sub/dashboardComponents/DashboardTopItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Message/sub/PersianClassCalender.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Message/sub/PersianClassCalender.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/RowShowShow.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/RowShowShow.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,26 +51,26 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="9" />
+          <entry key="css" value="10" />
           <entry key="gif" value="3" />
           <entry key="html" value="5" />
-          <entry key="js" value="245" />
+          <entry key="js" value="258" />
           <entry key="json" value="2" />
           <entry key="png" value="1" />
           <entry key="rnc" value="3" />
-          <entry key="scss" value="15" />
+          <entry key="scss" value="16" />
           <entry key="ts" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="9" />
+          <entry key="CSS" value="10" />
           <entry key="HTML" value="5" />
           <entry key="Image" value="4" />
           <entry key="JSON" value="2" />
-          <entry key="JavaScript" value="245" />
+          <entry key="JavaScript" value="258" />
           <entry key="RNG Compact" value="3" />
-          <entry key="SCSS" value="15" />
+          <entry key="SCSS" value="16" />
           <entry key="TypeScript" value="3" />
         </counts>
       </usages-collector>
@@ -79,43 +84,75 @@
         <counts>
           <entry key="css" value="19" />
           <entry key="html" value="126" />
-          <entry key="js" value="2043" />
-          <entry key="scss" value="607" />
+          <entry key="js" value="2130" />
+          <entry key="scss" value="675" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="19" />
           <entry key="HTML" value="126" />
-          <entry key="JavaScript" value="2043" />
-          <entry key="SCSS" value="607" />
+          <entry key="JavaScript" value="2130" />
+          <entry key="SCSS" value="675" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/assets/css/sass/_gogo.style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="466">
-              <caret line="6754" column="1" selection-start-line="6754" selection-start-column="1" selection-end-line="6754" selection-end-column="1" />
+            <state relative-caret-position="341">
+              <caret line="3095" column="32" lean-forward="true" selection-start-line="3095" selection-start-column="32" selection-end-line="3095" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/component/Message/sub/SendComponents/SendEvent.js">
+        <entry file="file://$PROJECT_DIR$/src/component/DashBoards/DashboardMain.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="199" column="46" lean-forward="true" selection-start-line="199" selection-start-column="46" selection-end-line="199" selection-end-column="46" />
+            <state relative-caret-position="161">
+              <caret line="11" column="71" selection-start-line="11" selection-start-column="71" selection-end-line="11" selection-end-column="71" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/component/DashBoards/sub/showdashboard.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="460">
+              <caret line="49" column="41" selection-start-line="49" selection-start-column="41" selection-end-line="49" selection-end-column="41" />
+              <folding>
+                <element signature="e#1283#1397#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/component/DashBoards/sub/dashboardComponents/DashboardTopItem.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="37" column="12" lean-forward="true" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
+              <folding>
+                <element signature="e#1121#1874#0" expanded="true" />
+                <element signature="e#1172#1858#0" expanded="true" />
+                <element signature="e#1199#1294#0" expanded="true" />
+                <element signature="e#1311#1834#0" expanded="true" />
+                <element signature="e#1576#1772#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/component/DashBoards/dashboard/DashboardRooot.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="11" column="71" lean-forward="true" selection-start-line="11" selection-start-column="71" selection-end-line="11" selection-end-column="71" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
-                <element signature="e#6307#12198#0" expanded="true" />
-                <element signature="e#6425#8241#0" expanded="true" />
-                <element signature="e#7502#8194#0" expanded="true" />
-                <element signature="e#7586#8143#0" expanded="true" />
-                <element signature="e#7902#8082#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -124,105 +161,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/component/Message/sub/PersianClassCalender.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="497">
-              <caret line="52" column="19" lean-forward="true" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
+            <state relative-caret-position="244">
+              <caret line="47" column="14" lean-forward="true" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
               <folding>
                 <element signature="n#!!block;n#setSelectedDay#0;n#PersianClassCalender#0" expanded="true" />
                 <element signature="e#663#1631#0" expanded="true" />
                 <element signature="e#1033#1575#0" expanded="true" />
+                <element signature="e#1739#2180#0" expanded="true" />
+                <element signature="e#1786#2161#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/react-persian-calendar-date-picker/lib/index.js">
+        <entry file="file://$PROJECT_DIR$/node_modules/react-datepicker/lib/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="21" column="57" selection-start-line="21" selection-start-column="57" selection-end-line="21" selection-end-column="57" />
-              <folding>
-                <element signature="e#60#77#0" expanded="true" />
-                <element signature="e#99#119#0" expanded="true" />
-                <element signature="e#163#249#0" expanded="true" />
-                <element signature="e#295#374#0" expanded="true" />
-                <element signature="e#532#792#0" expanded="true" />
-                <element signature="e#700#788#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/node_modules/react-persian-calendar-date-picker/lib/DatePicker.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="153" column="34" lean-forward="true" selection-start-line="153" selection-start-column="34" selection-end-line="153" selection-end-column="34" />
-              <folding>
-                <element signature="e#6148#6258#0" expanded="true" />
-                <element signature="e#7789#7815#0" expanded="true" />
-                <element signature="e#7840#7892#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="220">
+              <caret line="3192" column="11" selection-start-line="3192" selection-start-column="2" selection-end-line="3192" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/component/DashBoards/sub/dashboardComponents/AdminProfile.js">
+        <entry file="file://$PROJECT_DIR$/src/component/Message/sub/SendComponent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="136" column="39" selection-start-line="136" selection-start-column="39" selection-end-line="136" selection-end-column="39" />
-              <folding>
-                <element signature="e#3951#6092#0" expanded="true" />
-                <element signature="e#3990#4134#0" expanded="true" />
-                <element signature="e#4163#6054#0" expanded="true" />
-                <element signature="e#4279#4652#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/component/DashBoards/sub/dashboardComponents/DashboardCard.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="52" column="30" lean-forward="true" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
-              <folding>
-                <element signature="e#1460#1838#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/component/LoaderComponent.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+            <state relative-caret-position="368">
+              <caret line="28" column="64" lean-forward="true" selection-start-line="28" selection-start-column="64" selection-end-line="28" selection-end-column="64" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
-                <element signature="n#!!block;n#render#0;n#LoaderComponent#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/App.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="78" column="79" lean-forward="true" selection-start-line="78" selection-start-column="79" selection-end-line="78" selection-end-column="79" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/views/LogIn.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="943">
-              <caret line="87" column="2" selection-start-line="87" selection-start-column="2" selection-end-line="87" selection-end-column="2" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-                <element signature="e#273#334#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -239,7 +206,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>body</find>
       <find>barChartOptions</find>
       <find>react-rater-star</find>
       <find>iran</find>
@@ -263,12 +229,13 @@
       <find>loader</find>
       <find>ItemImageUrl</find>
       <find>Image</find>
-      <find>dashboard-search</find>
       <find>url</find>
       <find>primary</find>
       <find>NotificationManager</find>
-      <find>PersianClassCalender</find>
       <find>DatePicker</find>
+      <find>PersianClassCalender</find>
+      <find>card</find>
+      <find>dashboard-search</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -277,8 +244,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/component/Message/sub/PersianCalender.js" />
-        <option value="$PROJECT_DIR$/node_modules/react-persian-calendar-date-picker/lib/DatePicker.css" />
         <option value="$PROJECT_DIR$/src/components/charts/config.js" />
         <option value="$PROJECT_DIR$/src/component/Comments/sub/NewComments/ListComments.js" />
         <option value="$PROJECT_DIR$/src/component/Comments/sub/NewComments/sub/CommentsRow.js" />
@@ -292,7 +257,6 @@
         <option value="$PROJECT_DIR$/src/component/SuggestCategoriesComponent.js" />
         <option value="$PROJECT_DIR$/src/component/Items/AutoSuggestEdit.js" />
         <option value="$PROJECT_DIR$/src/component/Exit.js" />
-        <option value="$PROJECT_DIR$/src/component/RowShowShow.js" />
         <option value="$PROJECT_DIR$/src/component/Comments/MainComments.js" />
         <option value="$PROJECT_DIR$/src/component/Comments/CommentChart.js" />
         <option value="$PROJECT_DIR$/src/component/Comments/chart/CategoriesChartCulome.js" />
@@ -322,12 +286,15 @@
         <option value="$PROJECT_DIR$/src/component/Gallery/NewGallery/CafeShowGallery.js" />
         <option value="$PROJECT_DIR$/src/component/Items/sub/ShowItem.js" />
         <option value="$PROJECT_DIR$/src/component/Categories/ShowCategories.js" />
-        <option value="$PROJECT_DIR$/src/component/DashBoards/sub/dashboardComponents/AdminProfile.js" />
         <option value="$PROJECT_DIR$/src/views/LogIn.js" />
         <option value="$PROJECT_DIR$/src/constants/defaultValues.js" />
-        <option value="$PROJECT_DIR$/src/assets/css/sass/_gogo.style.scss" />
-        <option value="$PROJECT_DIR$/src/component/Message/sub/PersianClassCalender.js" />
         <option value="$PROJECT_DIR$/node_modules/react-persian-calendar-date-picker/lib/DatePicker.js" />
+        <option value="$PROJECT_DIR$/src/component/Message/sub/SendComponent.js" />
+        <option value="$PROJECT_DIR$/src/component/Message/sub/PersianClassCalender.js" />
+        <option value="$PROJECT_DIR$/src/component/DashBoards/sub/dashboardComponents/AdminProfile.js" />
+        <option value="$PROJECT_DIR$/src/component/RowShowShow.js" />
+        <option value="$PROJECT_DIR$/src/component/DashBoards/sub/dashboardComponents/DashboardTopItem.js" />
+        <option value="$PROJECT_DIR$/src/assets/css/sass/_gogo.style.scss" />
       </list>
     </option>
   </component>
@@ -407,24 +374,15 @@
               <item name="chichi-Panel" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="component" type="462c0819:PsiDirectoryNode" />
-              <item name="Message" type="462c0819:PsiDirectoryNode" />
+              <item name="DashBoards" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="chichi-Panel" type="b2602c69:ProjectViewProjectNode" />
               <item name="chichi-Panel" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="component" type="462c0819:PsiDirectoryNode" />
-              <item name="Message" type="462c0819:PsiDirectoryNode" />
+              <item name="DashBoards" type="462c0819:PsiDirectoryNode" />
               <item name="sub" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chichi-Panel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chichi-Panel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="component" type="462c0819:PsiDirectoryNode" />
-              <item name="Message" type="462c0819:PsiDirectoryNode" />
-              <item name="sub" type="462c0819:PsiDirectoryNode" />
-              <item name="SendComponents" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="chichi-Panel" type="b2602c69:ProjectViewProjectNode" />
@@ -486,12 +444,12 @@
       <workItem from="1571732126506" duration="850000" />
       <workItem from="1572072961762" duration="1619000" />
       <workItem from="1572082994224" duration="1180000" />
-      <workItem from="1572084381404" duration="895000" />
+      <workItem from="1572084381404" duration="4743000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70796000" />
+    <option name="totallyTimeSpent" value="74644000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -528,51 +486,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/component/Comments/chart/CategoriesChartCulome.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="86" column="8" selection-start-line="86" selection-start-column="8" selection-end-line="88" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/Comments/CommentChart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="33" column="51" lean-forward="true" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/Comments/sub/ShowComments.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="83" column="31" lean-forward="true" selection-start-line="83" selection-start-column="31" selection-end-line="83" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/Comments/MainComments.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="32" column="28" lean-forward="true" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/new/loader.gif">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/Comments/CategoriesChart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="28" column="67" selection-start-line="28" selection-start-column="67" selection-end-line="28" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/navs/Topnav.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="366" column="31" selection-start-line="366" selection-start-column="31" selection-end-line="366" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/component/Comments/Comments.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -697,13 +610,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/Categories/Categories.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="40" column="29" lean-forward="true" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/component/Categories/ShowCategories.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -789,16 +695,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/reactstrap/src/CardBody.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-          <folding>
-            <element signature="e#362#609#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/component/Items/twoStepAddItem/TwoStepAddItem.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="552">
@@ -811,53 +707,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/DashBoards/DashboardMain.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="11" column="71" selection-start-line="11" selection-start-column="71" selection-end-line="11" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/DashBoards/sub/showdashboard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="41" column="26" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
-          <folding>
-            <element signature="e#1414#1842#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/DashBoards/sub/dashboardComponents/AdminProfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="136" column="39" selection-start-line="136" selection-start-column="39" selection-end-line="136" selection-end-column="39" />
-          <folding>
-            <element signature="e#3951#6092#0" expanded="true" />
-            <element signature="e#3990#4134#0" expanded="true" />
-            <element signature="e#4163#6054#0" expanded="true" />
-            <element signature="e#4279#4652#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/component/DashBoards/sub/dashboardComponents/DashboardCard.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
           <caret line="52" column="30" lean-forward="true" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
           <folding>
             <element signature="e#1460#1838#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/LoaderComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-            <element signature="n#!!block;n#render#0;n#LoaderComponent#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -880,10 +735,194 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/Message/sub/SendComponents/SendMessange.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="497">
+          <caret line="159" column="44" lean-forward="true" selection-start-line="159" selection-start-column="44" selection-end-line="159" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#5217#6127#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/react-persian-calendar-date-picker/lib/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="21" column="57" selection-start-line="21" selection-start-column="57" selection-end-line="21" selection-end-column="57" />
+          <folding>
+            <element signature="e#60#77#0" expanded="true" />
+            <element signature="e#99#119#0" expanded="true" />
+            <element signature="e#163#249#0" expanded="true" />
+            <element signature="e#295#374#0" expanded="true" />
+            <element signature="e#532#792#0" expanded="true" />
+            <element signature="e#700#788#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/LoaderComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <element signature="n#!!block;n#render#0;n#LoaderComponent#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/react-persian-calendar-date-picker/lib/DatePicker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="151" column="16" selection-start-line="151" selection-start-column="16" selection-end-line="151" selection-end-column="16" />
+          <folding>
+            <element signature="e#6299#6420#0" expanded="true" />
+            <element signature="e#7789#7815#0" expanded="true" />
+            <element signature="e#7840#7892#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/Message/sub/SendComponents/SendEvent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="677">
+          <caret line="225" column="58" lean-forward="true" selection-start-line="225" selection-start-column="58" selection-end-line="225" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#7697#7849#0" expanded="true" />
+            <element signature="e#7902#8082#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/react-datepicker/lib/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="3192" column="11" selection-start-line="3192" selection-start-column="2" selection-end-line="3192" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/DashBoards/DashboardMain.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="11" column="71" selection-start-line="11" selection-start-column="71" selection-end-line="11" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/Categories/Categories.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="593">
+          <caret line="181" lean-forward="true" selection-start-line="181" selection-end-line="181" />
+          <folding>
+            <element signature="e#1302#1992#0" expanded="true" />
+            <element signature="e#5449#5613#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/Message/sub/SendComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="28" column="64" lean-forward="true" selection-start-line="28" selection-start-column="64" selection-end-line="28" selection-end-column="64" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/reactstrap/src/CardBody.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+          <folding>
+            <element signature="e#362#609#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/DashBoards/dashboard/DashboardRooot.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="71" lean-forward="true" selection-start-line="11" selection-start-column="71" selection-end-line="11" selection-end-column="71" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/Message/sub/PersianClassCalender.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="47" column="14" lean-forward="true" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
+          <folding>
+            <element signature="n#!!block;n#setSelectedDay#0;n#PersianClassCalender#0" expanded="true" />
+            <element signature="e#663#1631#0" expanded="true" />
+            <element signature="e#1033#1575#0" expanded="true" />
+            <element signature="e#1739#2180#0" expanded="true" />
+            <element signature="e#1786#2161#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/reactstrap/src/CardTitle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+          <folding>
+            <element signature="e#362#610#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/RowShowShow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#316#511#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/DashBoards/sub/dashboardComponents/AdminProfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="167" column="87" lean-forward="true" selection-start-line="167" selection-start-column="87" selection-end-line="167" selection-end-column="87" />
+          <folding>
+            <element signature="e#3990#4134#0" expanded="true" />
+            <element signature="e#4279#4652#0" expanded="true" />
+            <element signature="e#4685#5050#0" expanded="true" />
+            <element signature="e#5083#5445#0" expanded="true" />
+            <element signature="e#5793#6018#0" expanded="true" />
+            <element signature="e#5836#5979#0" expanded="true" />
+            <element signature="e#6143#7413#0" expanded="true" />
+            <element signature="e#6194#6338#0" expanded="true" />
+            <element signature="e#6367#7376#0" expanded="true" />
+            <element signature="e#6432#6578#0" expanded="true" />
+            <element signature="e#6611#6772#0" expanded="true" />
+            <element signature="e#6805#6963#0" expanded="true" />
+            <element signature="e#6997#7340#0" expanded="true" />
+            <element signature="e#7143#7301#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/DashBoards/sub/showdashboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="49" column="41" selection-start-line="49" selection-start-column="41" selection-end-line="49" selection-end-column="41" />
+          <folding>
+            <element signature="e#1283#1397#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/build/static/css/main.c28b0b13.chunk.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="463">
-          <caret line="6" column="425903" selection-start-line="6" selection-start-column="425903" selection-end-line="6" selection-end-column="425903" />
+          <caret line="6" column="361601" selection-start-line="6" selection-start-column="361601" selection-end-line="6" selection-end-column="361601" />
           <folding>
             <element signature="e#57961#58161#2" expanded="true" />
             <element signature="e#58367#58516#2" expanded="true" />
@@ -923,64 +962,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/DashBoards/sub/dashboardComponents/DashboardTopItem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="37" column="12" lean-forward="true" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
+          <folding>
+            <element signature="e#1121#1874#0" expanded="true" />
+            <element signature="e#1172#1858#0" expanded="true" />
+            <element signature="e#1199#1294#0" expanded="true" />
+            <element signature="e#1311#1834#0" expanded="true" />
+            <element signature="e#1576#1772#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/css/sass/_gogo.style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="6754" column="1" selection-start-line="6754" selection-start-column="1" selection-end-line="6754" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/Message/sub/SendComponents/SendEvent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="199" column="46" lean-forward="true" selection-start-line="199" selection-start-column="46" selection-end-line="199" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#6307#12198#0" expanded="true" />
-            <element signature="e#6425#8241#0" expanded="true" />
-            <element signature="e#7502#8194#0" expanded="true" />
-            <element signature="e#7586#8143#0" expanded="true" />
-            <element signature="e#7902#8082#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/Message/sub/PersianClassCalender.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="52" column="19" lean-forward="true" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
-          <folding>
-            <element signature="n#!!block;n#setSelectedDay#0;n#PersianClassCalender#0" expanded="true" />
-            <element signature="e#663#1631#0" expanded="true" />
-            <element signature="e#1033#1575#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-persian-calendar-date-picker/lib/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="21" column="57" selection-start-line="21" selection-start-column="57" selection-end-line="21" selection-end-column="57" />
-          <folding>
-            <element signature="e#60#77#0" expanded="true" />
-            <element signature="e#99#119#0" expanded="true" />
-            <element signature="e#163#249#0" expanded="true" />
-            <element signature="e#295#374#0" expanded="true" />
-            <element signature="e#532#792#0" expanded="true" />
-            <element signature="e#700#788#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-persian-calendar-date-picker/lib/DatePicker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="153" column="34" lean-forward="true" selection-start-line="153" selection-start-column="34" selection-end-line="153" selection-end-column="34" />
-          <folding>
-            <element signature="e#6148#6258#0" expanded="true" />
-            <element signature="e#7789#7815#0" expanded="true" />
-            <element signature="e#7840#7892#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="341">
+          <caret line="3095" column="32" lean-forward="true" selection-start-line="3095" selection-start-column="32" selection-end-line="3095" selection-end-column="32" />
         </state>
       </provider>
     </entry>

@@ -145,19 +145,24 @@ export default class AdminProfile extends Component {
                                 <Label className="form-group has-float-label mb-4 fontFamily">
                                     <Input type="text" name='FName' value={FName} onChange={this.handelChange.bind(this)}/>
                                     {/*<span className='fontFamily'>"نام"</span>*/}
-                                    <IntlMessages id='نام' />
+                                    <span className='mr-2'>'نام'</span>
+                                    {/*<IntlMessages id='نام' />*/}
                                 </Label>
                                 <Label className="form-group has-float-label mb-4">
                                     <Input type="text"  name='LName' onChange={this.handelChange.bind(this)} value={LName}/>
-                                    <IntlMessages
-                                        id="نام خوانوادگی"
-                                    />
+                                    {/*<IntlMessages*/}
+                                        {/*id="نام خوانوادگی"*/}
+                                    {/*/>*/}
+                                    <span className='mr-2'>'نام خوانوادگی'</span>
+
                                 </Label>
                                 <Label className="form-group has-float-label mb-4">
                                     <Input type="text"  name='UName' onChange={this.handelChange.bind(this)} value={UName}/>
-                                    <IntlMessages
-                                        id="نام کاربری"
-                                    />
+                                    {/*<IntlMessages*/}
+                                        {/*id="نام کاربری"*/}
+                                    {/*/>*/}
+                                    <span className='mr-2'>'نام کاربری'</span>
+
                                 </Label>
                                 <FormGroup className="text-center">
                                     <Button color="primary" className="mt-4 pl-5 pr-5">
@@ -175,7 +180,7 @@ export default class AdminProfile extends Component {
                         </CardBody>
                         :
                         <CardBody dir={'rtl'}>
-                            <CardTitle className="text-white">
+                            <CardTitle className="d-flex justify-content-start ">
                                 <IntlMessages id="ویرایش اطلاعات" />
                             </CardTitle>
                             <div className="form-container">

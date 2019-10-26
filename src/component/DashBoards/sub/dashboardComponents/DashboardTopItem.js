@@ -36,9 +36,9 @@ const DashboardTopItem = (props) => {
     console.log(props.data);
 
     return (
-        <Card className="dashboard-top-rated">
+        <Card className="dashboard-top-rated ">
             <CardBody>
-                <CardTitle>
+                <CardTitle className='d-flex justify-content-start'>
                     <IntlMessages id="برترین اقلام" />
                 </CardTitle>
                 <ReactSiemaCarousel
