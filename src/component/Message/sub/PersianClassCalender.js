@@ -57,6 +57,7 @@ class PersianClassCalender extends Component {
                     inputPlaceholder="انتخاب روز"
                     color="primary"
                     renderInput={renderCustomInput}
+                    wrapperClassName="w-100 z-99"
                     // className='z-99 w-100'
                     // calendarClassName={}
                 />
