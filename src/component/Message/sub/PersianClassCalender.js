@@ -37,18 +37,19 @@ class PersianClassCalender extends Component {
                     border: '0.2px solid #a0a0a0',
                     // borderRadius: '100px',
                     // boxShadow: '0 1.5rem 2rem rgba(156, 136, 255, 0.2)',
-                    color: '#9c88ff',
+                    color: '#6c4424',
                     // color: '#a0a0a0',
                     // outline: 'none',
-                    // width:'100%'
+                    width:'100%',
+                    zIndex:999,
                     lineHeight:'2em'
                 }}
                 className="calenderPersiona w-100" // a styling class
             />
-        )
+        );
         let{selectedDay}=this.state;
         return (
-            <div >
+            <div  className='z-99 w-100' >
                 <DatePicker
 
                     selectedDay={selectedDay}
